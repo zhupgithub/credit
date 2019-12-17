@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>edge</artifactId>
-    <description>边缘服务</description>
-
+    <artifactId>register</artifactId>
+    <description>注册中心</description>
 
 </project>

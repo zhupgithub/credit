@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<modules>
 		<module>master</module>
-		<module>minor</module>
 		<module>common</module>
+		<module>minor</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

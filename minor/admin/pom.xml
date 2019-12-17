@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mobile</artifactId>
-    <description>手机端服务</description>
+    <artifactId>admin</artifactId>
+    <description>admin监控</description>
 
 
 </project>

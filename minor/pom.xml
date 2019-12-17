@@ -11,11 +11,14 @@
 
     <artifactId>minor</artifactId>
     <packaging>pom</packaging>
-    <description>非业务服务</description>
+    <description>业务服务</description>
     <modules>
-        <module>pc</module>
-        <module>mobile</module>
-        <module>edge</module>
+        <module>register</module>
+        <module>config</module>
+        <module>admin</module>
+        <module>gateway</module>
+        <module>logger</module>
+        <module>code-generate</module>
     </modules>
 
 

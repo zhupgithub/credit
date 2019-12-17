@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>pc</artifactId>
-    <description>电脑端服务</description>
-
+    <artifactId>code-generate</artifactId>
+    <description>代码生成模块</description>
 
 </project>

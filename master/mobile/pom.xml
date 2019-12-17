@@ -3,19 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>credit</artifactId>
+        <artifactId>master</artifactId>
         <groupId>com.zhupeng</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>master</artifactId>
+    <artifactId>mobile</artifactId>
     <packaging>pom</packaging>
-    <description>业务服务</description>
+    <description>手机端服务,按用户访问量来进行分模块</description>
     <modules>
-        <module>pc</module>
-        <module>mobile</module>
-        <module>edge</module>
+        <module>mobile-user</module>
+        <module>mobile-auth</module>
+        <module>mobile-loan</module>
     </modules>
 
 

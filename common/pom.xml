@@ -10,7 +10,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>common</artifactId>
+    <packaging>pom</packaging>
     <description>公用服务</description>
+    <modules>
+        <module>api</module>
+        <module>utils</module>
+        <module>sys-commom</module>
+    </modules>
 
 
 </project>
