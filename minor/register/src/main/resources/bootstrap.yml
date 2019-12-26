@@ -1,0 +1,77 @@
+    #  1、排除Springboot默认的tomcat服务器，加入undertow服务器的jar包
+
+  ###undertow服务器的常规配置
+    # 下面是配置undertow作为服务器的参数
+  # undertow服务器性能高于tomcat服务器，Springboot模式使用tomcat，当想修改为undertow服务器时，使用步骤如下：
+  #  <!-- 下面的配置将使用undertow来做服务器而不是tomcat -->
+  #  <dependency>
+  #  <groupId>org.springframework.boot</groupId>
+  #  <artifactId>spring-boot-starter-web</artifactId>
+  #  <exclusions>
+  #  <exclusion>
+  #  <groupId>org.springframework.boot</groupId>
+  #  <artifactId>spring-boot-starter-tomcat</artifactId>
+  #  </exclusion>
+  #  </exclusions>
+  #  </dependency>
+  #  <dependency>
+  #  <groupId>org.springframework.boot</groupId>
+  #  <artifactId>spring-boot-starter-undertow</artifactId>
+  #  </dependency>
+  #  2、在yml文件中，加入一些undertow服务器的参数（可以不加）
+  #  undertow:
+  #    # 设置IO线程数, 它主要执行非阻塞的任务,它们会负责多个连接, 默认设置每个CPU核心一个线程
+  #    io-threads: 4
+  #    # 阻塞任务线程池, 当执行类似servlet请求阻塞操作, undertow会从这个线程池中取得线程,它的值设置取决于系统的负载
+  #    worker-threads: 20
+  #    # 以下的配置会影响buffer,这些buffer会用于服务器连接的IO操作,有点类似netty的池化内存管理
+  #    # 每块buffer的空间大小,越小的空间被利用越充分
+  #    buffer-size: 1024
+  #    # 是否分配的直接内存
+  #    direct-buffers: true
+server:
+  port: 9761
+spring:
+  security:
+    user:
+      name: admin
+      password: zhupeng
+  application:
+    name: register #设置服务的名称
+  cloud:
+    config:
+      enabled: false #标记说远程配置启用。默认为true;
+
+  #rabbitmq相关配置
+  rabbitmq:
+    host: 10.12.14.155
+    port: 5672
+    username: guest
+    password: guest
+
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+    register-with-eureka: false #自己是否注册到注册中心
+    fetch-registry: false # 需要从其他eureka节点获取注册信息
+    service-url:
+      defaultZone: http://admin:zhupeng@${eureka.instance.hostname}:${server.port}/eureka/ # 将服务注册到注册中心
+  server:
+    eviction-interval-timer-in-ms: 4000  #3秒钟自动剔除失效的节点
+    enable-self-preservation: false #开发阶段关闭Springcloud的保护模式
+    renewal-percent-threshold: 0.9
+    peer-node-read-timeout-ms: 10000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+  security:
+    enabled: false
