@@ -29,49 +29,20 @@
   #    buffer-size: 1024
   #    # 是否分配的直接内存
   #    direct-buffers: true
-server:
-  port: 9761
 spring:
   security:
     user:
       name: admin
       password: zhupeng
+
   application:
     name: register #设置服务的名称
+  profiles:
+    active: @spring.active@
   cloud:
     config:
-      enabled: false #标记说远程配置启用。默认为true;
+      profile: @spring.active@
+      name: pc-user   #文件前缀名称  #git 文件的环境   例如 {name}-{profile} = service-gateway-dev.yml
+      enabled: true
+      uri: http://127.0.0.1:9762
 
-  #rabbitmq相关配置
-  rabbitmq:
-    host: 10.12.14.155
-    port: 5672
-    username: guest
-    password: guest
-
-
-eureka:
-  instance:
-    hostname: localhost
-    prefer-ip-address: true
-  client:
-    register-with-eureka: false #自己是否注册到注册中心
-    fetch-registry: false # 需要从其他eureka节点获取注册信息
-    service-url:
-      defaultZone: http://admin:zhupeng@${eureka.instance.hostname}:${server.port}/eureka/ # 将服务注册到注册中心
-  server:
-    eviction-interval-timer-in-ms: 4000  #3秒钟自动剔除失效的节点
-    enable-self-preservation: false #开发阶段关闭Springcloud的保护模式
-    renewal-percent-threshold: 0.9
-    peer-node-read-timeout-ms: 10000
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-  endpoint:
-    health:
-      show-details: ALWAYS
-  security:
-    enabled: false

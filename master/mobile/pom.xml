@@ -19,4 +19,17 @@
     </modules>
 
 
+    <dependencies>
+        <!-- credit系统模块 -->
+        <dependency>
+            <groupId>com.zhupeng</groupId>
+            <artifactId>api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.zhupeng</groupId>
+            <artifactId>utils</artifactId>
+        </dependency>
+
+    </dependencies>
+
 </project>

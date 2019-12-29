@@ -18,5 +18,12 @@
         <module>pc-loan</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.zhupeng</groupId>
+            <artifactId>api</artifactId>
+        </dependency>
+    </dependencies>
+
 
 </project>

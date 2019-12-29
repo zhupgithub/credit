@@ -4,14 +4,8 @@ spring:
   application:
     name: config
   profiles:
-    active: @spring.active@
-
-#rabbitmq相关配置
-  rabbitmq:
-    host: 10.12.14.155
-    port: 5672
-    username: guest
-    password: guest
+    active: @spring.active@    #  springcloud中，当需要使用本地的配置文件时，该spring.profiles.active的值一定要等于native；
+                               #  配置本地配置文件必须激活内置的native,如若还需激活其他的就配置多个，如：native,dev
 
 
 # 注册中心配置
@@ -79,7 +73,7 @@ spring:
         #从git获取数据
         git:
           uri: https://github.com/zhupgithub/springcloud
-          search-paths: git-config        # git 仓库地址下的相对地址，可以配置多个，用“,”分割
+          search-paths: credit        # git 仓库地址下的相对地址，可以配置多个，用“,”分割
           username:                #  git仓库的账号（私有库必填）
           password:                  # git仓库的密码（私有库必填）
           force-pull: true
@@ -90,6 +84,6 @@ spring:
 
 ---
 
-#正式环境，配置中心的文件从私有仓库中获取
+#正式环境，配置中心的文件从私有仓库中获取(正式环境的配置，只是将git的地址改为私有的，数据库地址进行修改下，其他的与测试环境几乎相同)
 spring:
   profiles: formal

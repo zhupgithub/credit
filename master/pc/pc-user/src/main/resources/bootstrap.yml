@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: pc-user
+  profiles:
+    active: @spring.active@
+  cloud:
+    config:
+      profile: @spring.active@
+      name: pc-user   #文件前缀名称  #git 文件的环境   例如 {name}-{profile} = service-gateway-dev.yml
+      enabled: true
+      uri: http://127.0.0.1:9762

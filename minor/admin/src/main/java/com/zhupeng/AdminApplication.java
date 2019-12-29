@@ -1,4 +1,4 @@
-package zhupeng;
+package com.zhupeng;
 
 import de.codecentric.boot.admin.server.config.EnableAdminServer;
 import lombok.extern.slf4j.Slf4j;
