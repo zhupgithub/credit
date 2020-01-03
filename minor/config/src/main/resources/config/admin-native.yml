@@ -1,36 +1,30 @@
 server:
-  port: 9765
+  port: 9764
+
 spring:
   application:
-    name: pc-user2
-  profiles:
-    active: native
+    name: admin
+
+  security:
+    user:
+      name: admin
+      password: admin
+
   cloud:
     config:
-      name: pc-user2   #文件前缀名称
-      profile: native  #git 文件的环境   例如 {name}-{profile} = service-gateway-dev.yml
-      uri:
-        - http://127.0.0.1:9762
-        - http://127.0.0.1:9760
+      discovery:
+        enabled: true  #支持注册中心访问Config服务端
+        service-id: config  # 配置中心服务的名称
       enabled: true  #开启Config服务发现支持
       fail-fast: true  # 当config-server服务器宕机后，config-client将快速响应失败
     bus:
       refresh:
-        enabled: true   #动态刷新配置
+        enabled: true  #动态刷新配置
+      #跟踪总线事件
       trace:
         enabled: true
 
 
-  rabbitmq:
-    host: 10.12.14.155
-    port: 5672
-    username: guest
-    password: guest
-
-
-#roses:
-#  message:
-#    checkInterval: 30 #消息检查间隔，单位秒
 
 # 注册中心配置
 eureka:
@@ -43,14 +37,3 @@ eureka:
     service-url:
       defaultZone: http://admin:zhupeng@localhost:9761/eureka/
     registry-fetch-interval-seconds: 10  #重新刷新服务地址的时间
-
-#admin的相关信息
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-  endpoint:
-    health:
-      show-details: ALWAYS
-

@@ -1,5 +1,5 @@
 server:
-  port: 9762
+  port: 9760
 spring:
   application:
     name: config
@@ -19,6 +19,7 @@ eureka:
     service-url:
       defaultZone: http://admin:zhupeng@localhost:9761/eureka/
     registry-fetch-interval-seconds: 10  #重新刷新服务地址的时间
+
 
 management:
   endpoints:

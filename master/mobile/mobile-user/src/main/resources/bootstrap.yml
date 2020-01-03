@@ -8,4 +8,6 @@ spring:
       profile: @spring.active@
       name: mobile-user   #文件前缀名称  #git 文件的环境   例如 {name}-{profile} = service-gateway-dev.yml
       enabled: true
-      uri: http://127.0.0.1:9762
+      uri:
+        - http://127.0.0.1:9762
+        - http://127.0.0.1:9760
