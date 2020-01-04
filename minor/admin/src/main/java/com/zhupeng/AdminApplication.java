@@ -20,13 +20,13 @@ public class AdminApplication {
         SpringApplication.run(AdminApplication.class , args);
         log.info("admin监控启动完成！");
     }
-    @Configuration
-    public class SecurityPermitAllConfig extends WebSecurityConfigurerAdapter {
-
-        @Override
-        protected void configure(HttpSecurity http) throws Exception {
-            http.authorizeRequests().anyRequest().permitAll()
-                    .and().csrf().disable();
-        }
-    }
+//    @Configuration
+//    public class SecurityPermitAllConfig extends WebSecurityConfigurerAdapter {
+//
+//        @Override
+//        protected void configure(HttpSecurity http) throws Exception {
+//            http.authorizeRequests().anyRequest().permitAll()
+//                    .and().csrf().disable();
+//        }
+//    }
 }

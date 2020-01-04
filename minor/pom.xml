@@ -11,7 +11,7 @@
 
     <artifactId>minor</artifactId>
     <packaging>pom</packaging>
-    <description>业务服务</description>
+    <description>非业务服务</description>
     <modules>
         <module>register</module>
         <module>config</module>

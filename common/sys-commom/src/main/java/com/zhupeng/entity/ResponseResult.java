@@ -13,6 +13,10 @@ public class ResponseResult {
     //响应提示信息
     private String resultMessage;
 
+    //Feign的返回值，必须要存在无参的构造函数
+    public ResponseResult() {
+    }
+
     public ResponseResult(int resultCode, Object resultData, String resultMessage) {
         this.resultCode = resultCode;
         this.resultData = resultData;

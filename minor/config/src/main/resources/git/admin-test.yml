@@ -6,9 +6,27 @@ spring:
   security:
     user:
       name: admin
-      password: admin
+      password: root
 
+  rabbitmq:
+    host: 10.12.14.155
+    port: 5672
+    username: guest
+    password: guest
 
+  cloud:
+    config:
+      discovery:
+        enabled: true  #支持注册中心访问Config服务端
+        service-id: config  # 配置中心服务的名称
+      enabled: true  #开启Config服务发现支持
+      fail-fast: true  # 当config-server服务器宕机后，config-client将快速响应失败
+    bus:
+      refresh:
+        enabled: true  #动态刷新配置
+      #跟踪总线事件
+      trace:
+        enabled: true
 
 # 注册中心配置
 eureka:
@@ -17,11 +35,18 @@ eureka:
     prefer-ip-address: true
     lease-expiration-duration-in-seconds: 20   #服务过期时间配置,超过这个时间没有接收到心跳EurekaServer就会将这个实例剔除(默认90秒)
     lease-renewal-interval-in-seconds: 5       #服务刷新时间配置，每隔这个时间会主动心跳一次(默认30秒)
+    #当不加入该信息，adminserver本身将在admin服务中显示注册不成功
+    metadata-map:
+      user:
+        name: ${spring.security.user.name}
+        password: ${spring.security.user.password}
   client:
     service-url:
       defaultZone: http://admin:zhupeng@localhost:9761/eureka/
     registry-fetch-interval-seconds: 10  #重新刷新服务地址的时间
 
+
+#admin的相关信息
 management:
   endpoints:
     web:
@@ -30,5 +55,3 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
-  security:
-    enabled: false

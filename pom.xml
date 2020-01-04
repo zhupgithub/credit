@@ -10,9 +10,9 @@
     </parent>
 
     <modules>
-		<module>master</module>
 		<module>common</module>
 		<module>minor</module>
+		<module>master</module>
 	</modules>
 
 	<groupId>com.zhupeng</groupId>
@@ -59,6 +59,18 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+		<!--监控客户端-->
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-starter-client</artifactId>
+			<version>${spring-boot-admin.version}</version>
+		</dependency>
+
+		<!-- springcloud-bus  -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
 		</dependency>
 	</dependencies>
 

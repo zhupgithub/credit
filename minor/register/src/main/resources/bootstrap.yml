@@ -30,15 +30,12 @@
   #    # 是否分配的直接内存
   #    direct-buffers: true
 spring:
-  security:
-    user:
-      name: admin
-      password: zhupeng
-
   application:
     name: register #设置服务的名称
+
   profiles:
     active: @spring.active@
+
   cloud:
     config:
       profile: @spring.active@

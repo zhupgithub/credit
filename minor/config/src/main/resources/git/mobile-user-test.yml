@@ -3,6 +3,33 @@ server:
 spring:
   application:
     name: mobile-user
+
+
+  rabbitmq:
+    host: 10.12.14.155
+    port: 5672
+    username: guest
+    password: guest
+
+
+  redis:
+    hostName: localhost
+    port: 6379
+    password: zhupeng
+    # 连接超时时间（毫秒）
+    timeout: 5000
+    database: 0
+    pool:
+      # 连接池最大连接数（使用负值表示没有限制）
+      max-active: 10
+      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: -1
+      # 连接池中的最大空闲连接
+      max-idle: 5
+      # 连接池中的最小空闲连接
+      min-idle: 0
+
+
   cloud:
     config:
       name: mobile-user   #文件前缀名称
@@ -39,3 +66,18 @@ feign:
   hystrix:
     enabled: true
 
+
+
+
+#admin的相关信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+
+username: zhpeng222

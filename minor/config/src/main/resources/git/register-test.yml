@@ -5,6 +5,17 @@ spring:
   application:
     name: register
 
+  security:
+    user:
+      name: admin
+      password: zhupeng
+
+  rabbitmq:
+    host: 10.12.14.155
+    port: 5672
+    username: guest
+    password: guest
+
 eureka:
 
   instance:
@@ -15,10 +26,23 @@ eureka:
     register-with-eureka: true #自己是否注册到注册中心,true表示自己也注册到注册中心，因为需要从配置中心获取配置
     fetch-registry: false # 需要从其他eureka节点获取注册信息
     service-url:
-      defaultZone: http://admin:zhupeng@${eureka.instance.hostname}:${server.port}/eureka/ # 将服务注册到注册中心
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/ # 将服务注册到注册中心
 
   server:
     eviction-interval-timer-in-ms: 4000  #4秒钟自动剔除失效的节点
     enable-self-preservation: false #开发阶段关闭Springcloud的保护模式
     renewal-percent-threshold: 0.9
     peer-node-read-timeout-ms: 10000
+
+
+
+
+#admin的相关信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS

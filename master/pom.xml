@@ -13,10 +13,8 @@
     <packaging>pom</packaging>
     <description>业务服务</description>
     <modules>
-        <module>pc</module>
         <module>mobile</module>
-        <module>edge</module>
+        <module>pc</module>
     </modules>
-
 
 </project>

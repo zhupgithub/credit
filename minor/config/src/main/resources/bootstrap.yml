@@ -7,52 +7,14 @@ spring:
     active: @spring.active@    #  springcloud中，当需要使用本地的配置文件时，该spring.profiles.active的值一定要等于native；
                                #  配置本地配置文件必须激活内置的native,如若还需激活其他的就配置多个，如：native,dev
 
-
-# 注册中心配置
-eureka:
-  instance:
-    hostname: localhost
-    prefer-ip-address: true
-    lease-expiration-duration-in-seconds: 20   #服务过期时间配置,超过这个时间没有接收到心跳EurekaServer就会将这个实例剔除(默认90秒)
-    lease-renewal-interval-in-seconds: 5       #服务刷新时间配置，每隔这个时间会主动心跳一次(默认30秒)
-  client:
-    service-url:
-      defaultZone: http://admin:zhupeng@localhost:9761/eureka/
-    registry-fetch-interval-seconds: 10  #重新刷新服务地址的时间
-
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-  endpoint:
-    health:
-      show-details: ALWAYS
-  security:
-    enabled: false
-
 # http://localhost:9762/actuator/bus-refresh  bus的动态刷新接口，调用该接口后，关联的所有配置中心的客户端都将刷新配置
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ---
 
 #开发环境，配置中心的文件从本地获取
 spring:
-  profiles: dev
+  profiles: native
   cloud:
     config:
       server:
@@ -73,7 +35,7 @@ spring:
         bootstrap: true
         #从git获取数据
         git:
-          uri: https://github.com/zhupgithub/springcloud
+          uri: https://github.com/zhupgithub/config
           search-paths: credit        # git 仓库地址下的相对地址，可以配置多个，用“,”分割
           username:                #  git仓库的账号（私有库必填）
           password:                  # git仓库的密码（私有库必填）

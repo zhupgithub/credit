@@ -11,9 +11,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 public class PcUserApplication {
 
     public static void main(String[] args) {
-        log.info("PC端--用户模块启动中……");
+        log.info("pc-user业务系统启动中……");
         SpringApplication.run(PcUserApplication.class , args);
-        log.info("PC端--用户模块启动完成！");
+        log.info("pc-user业务系统启动完成！");
     }
 
 }

@@ -5,6 +5,13 @@ spring:
   application:
     name: pc-user
 
+  rabbitmq:
+    host: 10.12.14.155
+    port: 5672
+    username: guest
+    password: guest
+
+
   cloud:
     config:
       discovery:
@@ -31,3 +38,20 @@ eureka:
     service-url:
       defaultZone: http://admin:zhupeng@localhost:9761/eureka/
     registry-fetch-interval-seconds: 10  #重新刷新服务地址的时间
+
+
+
+
+#admin的相关信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+
+
+username: zhpeng222

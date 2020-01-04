@@ -1,8 +1,9 @@
 package com.zhupeng.controller;
 
+
 import com.zhupeng.entity.vo.UserVo;
 import com.zhupeng.mobile.user.service.UserService;
-import com.zhupeng.redis.RedisUtil;
+import com.zhupeng.utils.RedisUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -39,7 +40,7 @@ public class UserController {
 
         userService.addUser(userVo);
 
-        redisUtil.hset("com/zhupeng", "test" , "zhp");
+        redisUtil.hset("com.zhupeng", "test" , "zhp");
 
         return "success" + username;
     }

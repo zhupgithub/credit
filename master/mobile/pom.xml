@@ -11,23 +11,34 @@
 
     <artifactId>mobile</artifactId>
     <packaging>pom</packaging>
-    <description>手机端服务,按用户访问量来进行分模块</description>
     <modules>
         <module>mobile-user</module>
-        <module>mobile-auth</module>
-        <module>mobile-loan</module>
     </modules>
 
-
     <dependencies>
+
+        <!--web 模块-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <!--排除tomcat依赖-->
+                <exclusion>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                    <groupId>org.springframework.boot</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--undertow容器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-undertow</artifactId>
+        </dependency>
+
         <!-- credit系统模块 -->
         <dependency>
-            <groupId>com.zhupeng</groupId>
             <artifactId>api</artifactId>
-        </dependency>
-        <dependency>
             <groupId>com.zhupeng</groupId>
-            <artifactId>utils</artifactId>
         </dependency>
 
     </dependencies>

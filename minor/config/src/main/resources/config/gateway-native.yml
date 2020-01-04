@@ -1,10 +1,9 @@
 server:
-  port: 9763
+  port: 9767
 
 spring:
   application:
-    name: mobile-user
-
+    name: gateway
 
   rabbitmq:
     host: 10.12.14.155
@@ -31,6 +30,8 @@ spring:
       min-idle: 0
 
 
+
+
   cloud:
     config:
       discovery:
@@ -46,6 +47,28 @@ spring:
           enabled: true
 
 
+    gateway:
+      discovery:
+        locator:
+          enabled: false   #表明gateway开启服务注册和发现的功能，并且spring cloud gateway自动根据服务发现为每一个服务创建了一个router，
+                          #这个router将以服务名开头的请求路径转发到对应的服务
+          lower-case-service-id: true    #将请求路径上的服务名配置为小写
+      routes:
+        - id: pc-user
+          uri: lb://pc-user
+          predicates:
+            - Path=/pc/**     #访问以pc开头的请求，将被转发请求main-pc服务
+          filters:
+            - name: RequestRateLimiter
+              args:
+                key-resolver: '#{@hostAddrKeyResolver}'
+                redis-rate-limiter.replenishRate: 1    #令牌桶每秒填充平均速率。
+                redis-rate-limiter.burstCapacity: 1    #令牌桶总容量。
+            - MainPcFilter
+            - StripPrefix=1
+
+
+
 # 注册中心配置
 eureka:
   instance:
@@ -57,11 +80,6 @@ eureka:
     service-url:
       defaultZone: http://admin:zhupeng@localhost:9761/eureka/
     registry-fetch-interval-seconds: 10  #重新刷新服务地址的时间
-
-#开启Hystrix
-feign:
-  hystrix:
-    enabled: true
 
 
 
@@ -75,6 +93,3 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
-
-
-username: zhpeng22
