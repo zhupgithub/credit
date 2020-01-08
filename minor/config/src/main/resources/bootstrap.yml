@@ -20,7 +20,7 @@ spring:
       server:
         bootstrap: true
         native:
-          search-locations: classpath:/config/      #指明本地配置文件位置
+          search-locations: classpath:/native-config/      #指明本地配置文件位置
 
 
 

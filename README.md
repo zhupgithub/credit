@@ -15,3 +15,12 @@ docker、ELK、workflow、mycat
 
 
 
+user---auth---loan
+
+
+所有user相关的信息都在user中，包括身份证、银行卡等等，都需要调用user模块
+
+auth只执行认证，保存认证结果，loan需要调用user服务
+
+
+loan需要调用user和auth服务

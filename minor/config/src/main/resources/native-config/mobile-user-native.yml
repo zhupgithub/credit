@@ -6,13 +6,6 @@ spring:
     name: mobile-user
 
 
-  rabbitmq:
-    host: 10.12.14.155
-    port: 5672
-    username: guest
-    password: guest
-
-
   redis:
     hostName: localhost
     port: 6379
@@ -65,16 +58,6 @@ feign:
 
 
 
-
-#admin的相关信息
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-  endpoint:
-    health:
-      show-details: ALWAYS
 
 
 username: zhpeng22

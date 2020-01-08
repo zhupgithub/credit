@@ -5,13 +5,6 @@ spring:
   application:
     name: gateway
 
-  rabbitmq:
-    host: 10.12.14.155
-    port: 5672
-    username: guest
-    password: guest
-
-
   redis:
     hostName: localhost
     port: 6379
@@ -50,8 +43,9 @@ spring:
     gateway:
       discovery:
         locator:
-          enabled: false   #表明gateway开启服务注册和发现的功能，并且spring cloud gateway自动根据服务发现为每一个服务创建了一个router，
-                          #这个router将以服务名开头的请求路径转发到对应的服务
+          enabled: true   #表明gateway开启服务注册和发现的功能，并且spring cloud gateway自动根据服务发现为每一个服务创建了一个router，
+                          #这个router将以服务名开头的请求路径转发到对应的服务；当这个值为true时，可以使用服务名路由到指定服务上，
+                          #当设置为false之后，将不能通过服务名路由到指定服务上，必须设置Path断言才能进行路由到指定的服务上
           lower-case-service-id: true    #将请求路径上的服务名配置为小写
       routes:
         - id: pc-user
@@ -66,6 +60,18 @@ spring:
                 redis-rate-limiter.burstCapacity: 1    #令牌桶总容量。
             - MainPcFilter
             - StripPrefix=1
+        - id: mobile-user
+            uri: lb://mobile-user
+            predicates:
+              - Path=/mobile/**     #访问以pc开头的请求，将被转发请求main-pc服务
+            filters:
+              - name: RequestRateLimiter
+                args:
+                  key-resolver: '#{@hostAddrKeyResolver}'
+                  redis-rate-limiter.replenishRate: 1    #令牌桶每秒填充平均速率。
+                  redis-rate-limiter.burstCapacity: 1    #令牌桶总容量。
+              - MainPcFilter
+              - StripPrefix=1
 
 
 
@@ -82,14 +88,3 @@ eureka:
     registry-fetch-interval-seconds: 10  #重新刷新服务地址的时间
 
 
-
-
-#admin的相关信息
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-  endpoint:
-    health:
-      show-details: ALWAYS

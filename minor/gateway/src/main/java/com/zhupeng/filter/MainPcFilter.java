@@ -5,6 +5,9 @@ import org.springframework.cloud.gateway.filter.factory.AbstractGatewayFilterFac
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.stereotype.Component;
 
+/**
+ * 适用于指定服务的过滤器
+ */
 @Component
 public class MainPcFilter extends AbstractGatewayFilterFactory {
     @Override

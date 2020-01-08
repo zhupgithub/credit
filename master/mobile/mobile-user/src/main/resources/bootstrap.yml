@@ -3,7 +3,7 @@ spring:
     name: mobile-user #设置服务的名称
 
   profiles:
-    active: @spring.active@
+    active: @spring.acthttp://localhost:9767/mobile-user/user/test/ive@
 
   cloud:
     config:

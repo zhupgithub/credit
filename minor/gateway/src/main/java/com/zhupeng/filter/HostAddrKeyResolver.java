@@ -10,6 +10,7 @@ public class HostAddrKeyResolver implements KeyResolver {
 
     @Override
     public Mono<String> resolve(ServerWebExchange exchange) {
+        System.out.println("令牌桶算法");
 //        return Mono.just(exchange.getRequest().getRemoteAddress().getAddress().getHostAddress());
         return Mono.just(exchange.getRequest().getURI().getPath());
     }

@@ -1,19 +1,18 @@
-package com.zhupeng.controller.user;
+package com.zhupeng.provider;
 
-
+import com.zhupeng.controller.UserController;
 import com.zhupeng.entity.ResponseResult;
 import com.zhupeng.entity.vo.UserVo;
-import com.zhupeng.mobile.user.service.UserService;
-import lombok.extern.slf4j.Slf4j;
+import com.zhupeng.pc.user.api.PcUserApi;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RestController;
 
-@Slf4j
-@RefreshScope
+/***
+ * 服务提供者，提供接口维护
+ */
 @RestController
-//@RequestMapping("user")
-public class UserController implements UserService {
+public class UserProvider implements PcUserApi {
 
     @Value("${username}")
     String username;
