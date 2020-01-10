@@ -28,7 +28,7 @@ spring:
       discovery:
         enabled: true  #支持注册中心访问Config服务端
         service-id: config  # 配置中心服务的名称
-      profile: test  #git 文件的环境
+      profile: test  #git 文件的环境   例如 {name}-{profile} = service-gateway-dev.yml
       label: master
       enabled: true  #开启Config服务发现支持
       fail-fast: true  # 当config-server服务器宕机后，config-client将快速响应失败

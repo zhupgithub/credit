@@ -12,3 +12,7 @@
 3、当配置中心的文件设置为native时，自动刷新将失效，放在git上是可以成功的
 4、关于分布式日志查询，不想再去日志文件中查询日志了，可以为每个请求增加一个requestId，通过ELK显示数据，直接在kibana中通过这个requestId来显示一个调用过程
 5、当服务断开后，当使用本地配置文件时，将去获取调用本地的mq。当注册中心断开了，其他服务也将不能启动
+6、当显示@Feign声明的接口不能@Autowired的时候，看下启动类上是否@EnableFeignClients注解，当存在这个注解，但还是显示相同错误，可以将@Feign声明的接口写入@EnableFeignClients注解的basePackage属性中。
+7、Feign的服务降级无效，可能是yml文件中feign.hystrix.enabled=true没有进行设置
+8、使用配置中心（http://localhost:9760/gateway-native.yml）打开配置文件，打不开，可能文件缩行有问题
+9、使用spring.factory文件替换@ComponentScan(basePackages = "com.zhupeng.**")，使之不用扫描全部路径下，方便提供jar包给其他人使用

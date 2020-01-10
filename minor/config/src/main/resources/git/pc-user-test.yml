@@ -37,5 +37,9 @@ eureka:
       defaultZone: http://admin:zhupeng@localhost:9761/eureka/
     registry-fetch-interval-seconds: 10  #重新刷新服务地址的时间
 
+#开启Hystrix
+feign:
+  hystrix:
+    enabled: true
 
 username: zhpeng222

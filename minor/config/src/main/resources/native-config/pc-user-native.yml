@@ -8,7 +8,7 @@ spring:
   cloud:
     config:
       discovery:
-        enabled: true
+        enabled: true  #支持注册中心访问Config服务端
         service-id: config  # 配置中心服务的名称
       enabled: true  #开启Config服务发现支持
       fail-fast: true  # 当config-server服务器宕机后，config-client将快速响应失败
@@ -32,5 +32,9 @@ eureka:
       defaultZone: http://admin:zhupeng@localhost:9761/eureka/
     registry-fetch-interval-seconds: 10  #重新刷新服务地址的时间
 
+#开启Hystrix
+feign:
+  hystrix:
+    enabled: true
 
 username: zhpeng222
