@@ -10,8 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 @Slf4j
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients(basePackages = "com.zhupeng.common.api.**")//这个注解中的basePackages将会扫描这个包下所有类，并且生成对应的对象
-@ComponentScan(basePackages = "com.zhupeng.**")
+@EnableFeignClients(basePackages = "com.zhupeng.common.api.**")//这个注解中的basePackages将会使feign扫描这个包下所有类，将这个包下的类向feign注册
 public class PcUserApplication {
 
     public static void main(String[] args) {

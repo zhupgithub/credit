@@ -4,7 +4,8 @@
 3、将Feign请求处理的日志打印debug级别，方便查询Feign调用异常问题（https://www.cnblogs.com/lkd934/p/9541417.html）
 4、统一异常处理，这是需要Feign调用中进行特殊处理
 5、网关生成唯一请求号，方便处理一个业务逻辑调用多个服务时，异常的查看
-
+6、将minor模块整体打成一个jar包，然后将一些关键参数配置到外置的配置文件中，当然也有一些默认配置；当用户不想只用默认配置，可以让用户修改外置配置文件，最后用户重启服务就可以使用修改外置文件生效
+7、在service和controller都使用@Valid注解，对于单个基本类型作为参数也使用@Valid注解
 
 问题：
 1、将一些公用配置写在配置中心的application-dev.yml文件无效(已解决，原因：写在本地的配置文件写在了配置中心的resource/config文件夹中，这个名称的文件夹默认是属于配置中心一个人的)
@@ -16,3 +17,4 @@
 7、Feign的服务降级无效，可能是yml文件中feign.hystrix.enabled=true没有进行设置
 8、使用配置中心（http://localhost:9760/gateway-native.yml）打开配置文件，打不开，可能文件缩行有问题
 9、使用spring.factory文件替换@ComponentScan(basePackages = "com.zhupeng.**")，使之不用扫描全部路径下，方便提供jar包给其他人使用
+10、在@EnableFeignClients的注解中，没有添加basePackages属性并赋予值时，将不会Feign的功能（Feign的服务降级和Feign的调用其他服务的功能），这个basePackages属性表示将这包下的类向Feign进行注册（但是我不想要在这儿书写，是否可以在Feign客户端写这个属性）

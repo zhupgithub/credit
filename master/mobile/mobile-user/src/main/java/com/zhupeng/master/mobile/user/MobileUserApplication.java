@@ -10,8 +10,8 @@ import org.springframework.context.annotation.ComponentScan;
 @Slf4j
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients(basePackages = "com.zhupeng.common.api.**")
-@ComponentScan(basePackages = "com.zhupeng.**")
+@EnableFeignClients(basePackages = "com.zhupeng.common.api.**")//这个注解中的basePackages将会使feign扫描这个包下所有类，将这个包下的类向feign注册
+//@ComponentScan(basePackages = "com.zhupeng.**")
 public class MobileUserApplication {
 
     public static void main(String[] args) {

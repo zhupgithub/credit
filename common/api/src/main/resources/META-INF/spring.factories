@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.zhupeng.common.api.mobile.user.fallback.MobileUserApiFallback,\
+  com.zhupeng.common.api.pc.user.fallback.PcUserApiFallback,\
+  com.zhupeng.common.api.mobile.user.factory.MobileUserApiFallbackFactory,\
+  com.zhupeng.common.api.pc.user.factory.PcUserApiFallbackFactory
