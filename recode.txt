@@ -18,3 +18,13 @@
 8、使用配置中心（http://localhost:9760/gateway-native.yml）打开配置文件，打不开，可能文件缩行有问题
 9、使用spring.factory文件替换@ComponentScan(basePackages = "com.zhupeng.**")，使之不用扫描全部路径下，方便提供jar包给其他人使用
 10、在@EnableFeignClients的注解中，没有添加basePackages属性并赋予值时，将不会Feign的功能（Feign的服务降级和Feign的调用其他服务的功能），这个basePackages属性表示将这包下的类向Feign进行注册（但是我不想要在这儿书写，是否可以在Feign客户端写这个属性）
+
+
+
+
+
+记录：
+1、当开启网关服务后，对外只开放网关服务的端口，其他服务的端口都不进行对外开放，当想访问其他服务时，直接通过网关服务的过滤器。对于gateway网关而已，默认时有一个router的，这个router是以相应服务的服务名称。当自己主动为指定服务设置了router，但是没有关闭默认服务（spring.cloud.gateway.discovery.locator.enabled = false）时，这时这个服务有两个router可以访问这个服务。
+2、对于提供其他服务调用的接口，对于URL地址的值需要加上一些特殊字段，防止直接被前端访问了；但是对于被@FeignClient标注的类，不能再在该类上面添加@RequestMapping注解，否则会报该URL地址已经被实现
+3、对于修改了API服务，其他相关服务都得进行重新启动；例如服务的提供者和服务的消费者。
+4、调用其他服务，只要经过了网关服务，不管最终的URL地址是否存在，都会经过网关的过滤器，这样会带给网关极大的性能消耗

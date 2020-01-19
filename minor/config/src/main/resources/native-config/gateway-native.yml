@@ -51,7 +51,7 @@ spring:
         - id: pc-user
           uri: lb://pc-user
           predicates:
-            - Path=/pc/**     #访问以pc开头的请求，将被转发请求main-pc服务
+            - Path=/pc/user/**     #访问以pc开头的请求，将被转发请求main-pc服务
           filters:
             - name: RequestRateLimiter
               args:
@@ -59,12 +59,12 @@ spring:
                 redis-rate-limiter.replenishRate: 1    #令牌桶每秒填充平均速率。
                 redis-rate-limiter.burstCapacity: 1    #令牌桶总容量。
             - MainPcFilter
-            - StripPrefix=1
+            - StripPrefix=2
 
         - id: mobile-user
           uri: lb://mobile-user
           predicates:
-            - Path=/mobile/**     #访问以pc开头的请求，将被转发请求main-pc服务
+            - Path=/mobile/user/**     #访问以pc开头的请求，将被转发请求main-pc服务
           filters:
             - name: RequestRateLimiter
               args:
@@ -72,7 +72,7 @@ spring:
                 redis-rate-limiter.replenishRate: 1    #令牌桶每秒填充平均速率。
                 redis-rate-limiter.burstCapacity: 1    #令牌桶总容量。
             - MainPcFilter
-            - StripPrefix=1
+            - StripPrefix=2
 
 
 
