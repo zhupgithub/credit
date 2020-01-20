@@ -11,8 +11,12 @@
 
     <artifactId>mobile</artifactId>
     <packaging>pom</packaging>
+    <description>手机端服务</description>
+
     <modules>
         <module>mobile-user</module>
+        <module>mobile-loan</module>
+        <module>mobile-auth</module>
     </modules>
 
     <dependencies>

@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>pc-loan</artifactId>
+    <description>网页端的借款模块（人工认证、催款等等）</description>
 
 
 </project>

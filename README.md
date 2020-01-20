@@ -13,10 +13,13 @@ Springcloud家族组件（eureka、admin、gateway、config、hystrix、Feign、
 mybatisplus、rabbitmq（系统解耦，可有可无）、Nginx、分布式事务LCN、ES、
 docker、ELK、workflow、mycat
 
-
-
+手机端：
 user---auth---loan
 
+网页端：
+用户
+借款
+数据中心
 
 所有user相关的信息都在user中，包括身份证、银行卡等等，都需要调用user模块
 

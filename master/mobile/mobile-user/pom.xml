@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>mobile-user</artifactId>
+    <description>手机端的用户模块</description>
 
     <dependencies>
         <dependency>
