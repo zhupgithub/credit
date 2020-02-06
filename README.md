@@ -13,6 +13,9 @@ Springcloud家族组件（eureka、admin、gateway、config、hystrix、Feign、
 mybatisplus、rabbitmq（系统解耦，可有可无）、Nginx、分布式事务LCN、ES、
 docker、ELK、workflow、mycat
 
+注意點：
+1、整个系统在启动时，首先必须先启动config服务，在config服务启动成功后，再启动register服务，当register服务启动成功后，其他服务启动顺序随意
+
 手机端：
 user---auth---loan
 
