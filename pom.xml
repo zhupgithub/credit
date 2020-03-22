@@ -31,7 +31,7 @@
 
 		<spring-boot-admin.version>2.1.6</spring-boot-admin.version>
 
-		<zhupeng.common.sys-commom-version>1.0.0-SNAPSHOT</zhupeng.common.sys-commom-version>
+		<zhupeng.common.common-core-version>1.0.0-SNAPSHOT</zhupeng.common.common-core-version>
 		<zhupeng.common.api-version>1.0.0-SNAPSHOT</zhupeng.common.api-version>
 		<zhupeng.common.utils-version>1.0.0-SNAPSHOT</zhupeng.common.utils-version>
 	</properties>
@@ -90,8 +90,8 @@
 			<!-- credit系统模块 -->
 			<dependency>
 				<groupId>com.zhupeng</groupId>
-				<artifactId>sys-commom</artifactId>
-				<version>${zhupeng.common.sys-commom-version}</version>
+				<artifactId>common-core</artifactId>
+				<version>${zhupeng.common.common-core-version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.zhupeng</groupId>

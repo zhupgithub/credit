@@ -9,7 +9,7 @@ spring:
   redis:
     hostName: localhost
     port: 6379
-    password: zhupeng
+    password: root
     # 连接超时时间（毫秒）
     timeout: 5000
     database: 0

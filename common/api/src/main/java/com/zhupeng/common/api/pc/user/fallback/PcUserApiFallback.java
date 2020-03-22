@@ -3,9 +3,9 @@ package com.zhupeng.common.api.pc.user.fallback;
 
 import com.zhupeng.common.api.pc.user.PcUserApi;
 import com.zhupeng.common.sys.entity.ResponseResult;
-import com.zhupeng.common.sys.entity.vo.UserVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
+import com.zhupeng.common.api.pc.user.entity.vo.UserVo;
 
 @Slf4j
 @Component
