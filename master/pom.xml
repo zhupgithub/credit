@@ -16,5 +16,34 @@
         <module>mobile</module>
         <module>pc</module>
     </modules>
+    <dependencies>
+        <!--web 模块-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <!--排除tomcat依赖-->
+                <exclusion>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                    <groupId>org.springframework.boot</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--undertow容器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-undertow</artifactId>
+        </dependency>
 
+
+        <!-- credit系统模块 -->
+        <dependency>
+            <artifactId>api</artifactId>
+            <groupId>com.zhupeng</groupId>
+        </dependency>
+        <dependency>
+            <groupId>com.zhupeng</groupId>
+            <artifactId>utils</artifactId>
+        </dependency>
+    </dependencies>
 </project>

@@ -15,7 +15,7 @@
     <modules>
         <module>api</module>
         <module>utils</module>
-        <module>sys-commom</module>
+        <module>common-core</module>
     </modules>
 
 

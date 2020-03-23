@@ -1,9 +1,10 @@
 package com.zhupeng.master.mobile.user.controller;
 
 
+import com.zhupeng.common.api.mobile.user.entity.vo.UserVo;
 import com.zhupeng.common.sys.entity.ResponseResult;
-import com.zhupeng.common.sys.entity.vo.UserVo;
-import com.zhupeng.common.utils.RedisUtil;
+
+import com.zhupeng.common.utils.redis.RedisUtil;
 import com.zhupeng.master.mobile.user.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

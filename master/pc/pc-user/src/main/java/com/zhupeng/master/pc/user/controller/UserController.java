@@ -1,8 +1,8 @@
 package com.zhupeng.master.pc.user.controller;
 
 
+import com.zhupeng.common.api.pc.user.entity.vo.UserVo;
 import com.zhupeng.common.sys.entity.ResponseResult;
-import com.zhupeng.common.sys.entity.vo.UserVo;
 import com.zhupeng.master.pc.user.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

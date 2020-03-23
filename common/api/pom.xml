@@ -40,7 +40,7 @@
         <!-- credit系统模块 -->
         <dependency>
             <groupId>com.zhupeng</groupId>
-            <artifactId>sys-commom</artifactId>
+            <artifactId>common-core</artifactId>
         </dependency>
     </dependencies>
 

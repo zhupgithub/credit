@@ -1,10 +1,10 @@
 package com.zhupeng.common.api.mobile.user;
 
 
+import com.zhupeng.common.api.mobile.user.entity.vo.UserVo;
 import com.zhupeng.common.api.mobile.user.factory.MobileUserApiFallbackFactory;
 import com.zhupeng.common.sys.constant.ServiceConstant;
 import com.zhupeng.common.sys.entity.ResponseResult;
-import com.zhupeng.common.sys.entity.vo.UserVo;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
