@@ -20,7 +20,7 @@ public class ServiceConstant {
      *  ----------start------------ 分布式日志
      */
     public static final String REQUEST_TRACEID = "X-TRACEID";
-    public static final String REQUEST_PARENTID = "X-PARENTID";
+    public static final String REQUEST_PARENTSPANID = "X-PARENTID";
     public static final String REQUEST_SPANID = "X-SPANID";
 
 

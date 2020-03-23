@@ -35,7 +35,7 @@ public class ParentIdContext {
 
     public static String getParentIdOnHttpRequestHeader(){
         HttpServletRequest httpServletRequest = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-        String traceId = httpServletRequest.getHeader(ServiceConstant.REQUEST_PARENTID);
+        String traceId = httpServletRequest.getHeader(ServiceConstant.REQUEST_PARENTSPANID);
 
         if(StringUtils.isBlank(traceId)){
             traceId = "";

@@ -29,7 +29,7 @@ public class LogChainOnControllerAop {
 
         //生成当前的parentId，并且设置到MDC和当前线程中
         String parentId = UUID.randomUUID().toString();
-        MDC.put(ServiceConstant.REQUEST_PARENTID , parentId);
+        MDC.put(ServiceConstant.REQUEST_PARENTSPANID , parentId);
         TraceIdContext.setTraceIdOnThreadLocal(parentId);
 
         //生成当前的spanId，并且设置到MDC和当前线程中
