@@ -1,5 +1,7 @@
 package com.zhupeng.common.sys.chain.aop;
 
+import com.zhupeng.common.sys.chain.context.ParentIdContext;
+import com.zhupeng.common.sys.chain.context.SpanIdContext;
 import com.zhupeng.common.sys.chain.context.TraceIdContext;
 import com.zhupeng.common.sys.constant.ServiceConstant;
 import lombok.extern.slf4j.Slf4j;
@@ -30,12 +32,12 @@ public class LogChainOnControllerAop {
         //生成当前的parentId，并且设置到MDC和当前线程中
         String parentId = UUID.randomUUID().toString();
         MDC.put(ServiceConstant.REQUEST_PARENTSPANID , parentId);
-        TraceIdContext.setTraceIdOnThreadLocal(parentId);
+        ParentIdContext.setParentIdOnThreadLocal(parentId);
 
         //生成当前的spanId，并且设置到MDC和当前线程中
         String spanId = UUID.randomUUID().toString();
         MDC.put(ServiceConstant.REQUEST_SPANID , spanId);
-        TraceIdContext.setTraceIdOnThreadLocal(spanId);
+        SpanIdContext.setSpanIdOnThreadLocal(spanId);
 
         return point.proceed();
     }

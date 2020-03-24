@@ -24,7 +24,6 @@ public class LogChainOnProviderAop {
     public Object logChainOnControllerAop(ProceedingJoinPoint point) throws Throwable{
         //获取traceId,并且设置到MDC和当前线程中
         String traceId = TraceIdContext.getTraceIdOnHttpRequestHeader();
-        log.info("LogChainOnProviderAopCut========,traceId:{}" , traceId);
         MDC.put(ServiceConstant.REQUEST_TRACEID , traceId);
         TraceIdContext.setTraceIdOnThreadLocal(traceId);
 
