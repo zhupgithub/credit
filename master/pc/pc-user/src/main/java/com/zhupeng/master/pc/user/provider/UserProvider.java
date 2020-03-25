@@ -22,8 +22,8 @@ public class UserProvider implements PcUserApi {
         userVo.setUsername("zhupneg");
         userVo.setAge(12);
 
-        float a = 1/0;
         System.out.println("======================================================" + userVo.toString()  + "===" + username);
+        float a = 1/0;
         return ResponseResult.successResult(userVo);
     }
 

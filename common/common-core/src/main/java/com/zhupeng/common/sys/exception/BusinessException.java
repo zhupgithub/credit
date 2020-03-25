@@ -1,5 +1,6 @@
 package com.zhupeng.common.sys.exception;
 
+import com.zhupeng.common.sys.constant.ResultEnum;
 import lombok.Data;
 
 /**
@@ -12,32 +13,40 @@ public class BusinessException extends RuntimeException {
 
     private String errorMessage;
 
+    private Object data;
+
+    public BusinessException() {
+        this.code = ResultEnum.DEFAULT_FAIL.getResultCode();
+        this.errorMessage = ResultEnum.DEFAULT_FAIL.getResultMessage();
+    }
+
+    public BusinessException(Exception e) {
+        this.code = ResultEnum.DEFAULT_FAIL.getResultCode();
+        this.errorMessage = ResultEnum.DEFAULT_FAIL.getResultMessage() + ":" + e.toString();
+    }
+
     public BusinessException(Integer code, String errorMessage) {
         this.code = code;
         this.errorMessage = errorMessage;
     }
 
-    public BusinessException(String message, Integer code, String errorMessage) {
-        super(message);
+    public BusinessException(Integer code, String errorMessage , Object data) {
         this.code = code;
         this.errorMessage = errorMessage;
+        this.data = data;
     }
 
-    public BusinessException(String message, Throwable cause, Integer code, String errorMessage) {
-        super(message, cause);
-        this.code = code;
-        this.errorMessage = errorMessage;
+    public BusinessException(ResultEnum resultEnum) {
+        this.code = resultEnum.getResultCode();
+        this.errorMessage = resultEnum.getResultMessage();
     }
 
-    public BusinessException(Throwable cause, Integer code, String errorMessage) {
-        super(cause);
-        this.code = code;
-        this.errorMessage = errorMessage;
+    public BusinessException(ResultEnum resultEnum , Object data) {
+        this.code = resultEnum.getResultCode();
+        this.errorMessage = resultEnum.getResultMessage();
+        this.data = data;
     }
 
-    public BusinessException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace, Integer code, String errorMessage) {
-        super(message, cause, enableSuppression, writableStackTrace);
-        this.code = code;
-        this.errorMessage = errorMessage;
-    }
+
+
 }
