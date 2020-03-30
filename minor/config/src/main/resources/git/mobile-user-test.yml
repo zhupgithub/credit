@@ -55,8 +55,17 @@ eureka:
 
 #开启Hystrix
 feign:
+  #配置Feign的连接池
+  httpclient:
+    # feign 最大连接数
+    max-connections: 200
+    # feign 单个路径请求的最大连接数
+    max-connections-per-route: 50
+  okhttp:
+    enabled: true
   hystrix:
     enabled: true
+
 
 
 

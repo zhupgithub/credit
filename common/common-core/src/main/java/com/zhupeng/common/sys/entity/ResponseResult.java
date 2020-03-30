@@ -37,4 +37,8 @@ public class ResponseResult {
     public static ResponseResult defaultFailResult(int resultCode , Object resultData , String resultMessage){
         return new ResponseResult(resultCode , resultData , resultMessage);
     }
+
+    public static ResponseResult defaultFailResult(ResultEnum resultEnum){
+        return new ResponseResult(resultEnum.getResultCode() , null , resultEnum.getResultMessage());
+    }
 }
