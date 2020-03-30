@@ -47,6 +47,12 @@ public class BusinessException extends RuntimeException {
         this.data = data;
     }
 
-
+    @Override
+    public String toString(){
+        return "{" +
+                "\"code\":" + code +
+                "\"data\":" + data +
+                ", \"errorMessage\":\"" + errorMessage + "\"" +"}";
+    }
 
 }

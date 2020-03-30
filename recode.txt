@@ -27,7 +27,7 @@ provider（服务提供方，确保提供方提供了正确的功能）。其中
 8、使用配置中心（http://localhost:9760/gateway-native.yml）打开配置文件，打不开，可能文件缩行有问题
 9、使用spring.factory文件替换@ComponentScan(basePackages = "com.zhupeng.**")，使之不用扫描全部路径下，方便提供jar包给其他人使用
 10、在@EnableFeignClients的注解中，没有添加basePackages属性并赋予值时，将不会Feign的功能（Feign的服务降级和Feign的调用其他服务的功能），这个basePackages属性表示将这包下的类向Feign进行注册（但是我不想要在这儿书写，是否可以在Feign客户端写这个属性）
-
+11、feign的自定义错误解码器ErrorDecoder，response.body()获取到字符串是一个HTML时，可能是返回的统一异常处理返回的对象没有重写toString（）方法
 
 
 

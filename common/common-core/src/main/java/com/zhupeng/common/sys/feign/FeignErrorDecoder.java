@@ -14,6 +14,7 @@ import java.io.IOException;
 
 /**
  * Feign自定义的错误解码器
+ * @controllerAdvice或者HandlerExceptionResolver是不能直接捕获到FeignException,所以需要在Feign层面拿到具体异常重新封装
  */
 public class FeignErrorDecoder implements ErrorDecoder {
     @Override
