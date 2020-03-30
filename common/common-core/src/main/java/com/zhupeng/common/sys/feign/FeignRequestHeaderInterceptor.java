@@ -9,7 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Enumeration;
 
 /**
- * Feign 支持请求拦截器，在发送请求前，可以对发送的模板进行操作，例如设置请求头等属性，自定请求拦截器需要实现 feign.RequestInterceptor 接口，该接口的方法 apply 有参数 template ，该参数类型为 RequestTemplate，我们可以根据实际情况对请求信息进行调整
+ * Feign 支持请求拦截器，在发送请求前，可以对发送的模板进行操作，
+ * 例如设置请求头等属性，自定请求拦截器需要实现 feign.RequestInterceptor 接口，
+ * 该接口的方法 apply 有参数 template ，该参数类型为 RequestTemplate，我们可以根据实际情况对请求信息进行调整
  */
 public class FeignRequestHeaderInterceptor implements RequestInterceptor {
     @Override
