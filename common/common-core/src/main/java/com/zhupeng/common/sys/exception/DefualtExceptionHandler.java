@@ -2,11 +2,11 @@ package com.zhupeng.common.sys.exception;
 
 import com.zhupeng.common.sys.entity.ResponseResult;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @Slf4j
-@ControllerAdvice
+@RestControllerAdvice
 public class DefualtExceptionHandler {
 
     /**
@@ -16,6 +16,8 @@ public class DefualtExceptionHandler {
      */
     @ExceptionHandler(BusinessException.class)
     public ResponseResult businessException(BusinessException e){
+        e.printStackTrace();
+        log.error("异常信息：" + e.toString());
         return new ResponseResult(e.getCode() , null , e.getErrorMessage());
     }
 
@@ -27,6 +29,8 @@ public class DefualtExceptionHandler {
      */
     @ExceptionHandler(Exception.class)
     public ResponseResult exception(Exception e){
+        e.printStackTrace();
+        log.error("异常信息：" + e.toString());
         return new ResponseResult(400 , null , e.toString());
     }
 }
