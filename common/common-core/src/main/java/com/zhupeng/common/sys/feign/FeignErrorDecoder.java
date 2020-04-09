@@ -7,18 +7,19 @@ import com.zhupeng.common.sys.constant.ResultEnum;
 import com.zhupeng.common.sys.exception.BusinessException;
 import feign.Response;
 import feign.codec.ErrorDecoder;
-
+import lombok.extern.slf4j.Slf4j;
 
 
 import java.io.IOException;
 
 /**
  * Feign自定义的错误解码器
- * @controllerAdvice或者HandlerExceptionResolver是不能直接捕获到FeignException,所以需要在Feign层面拿到具体异常重新封装
  */
+@Slf4j
 public class FeignErrorDecoder implements ErrorDecoder {
     @Override
     public Exception decode(String methodKey, Response response) {
+        log.info("Feign自定义的错误解码器");
         String resposeBody;
         try {
             if (response == null || response.body() == null) {

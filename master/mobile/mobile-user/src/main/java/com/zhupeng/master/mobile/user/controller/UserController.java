@@ -43,7 +43,7 @@ public class UserController {
         ResponseResult responseResult = userService.addPcUser(userVo);
 
         redisUtil.hset("com.zhupeng", "test" , "zhp");
-
+        float i = 1/0;
         return responseResult + username;
     }
 }

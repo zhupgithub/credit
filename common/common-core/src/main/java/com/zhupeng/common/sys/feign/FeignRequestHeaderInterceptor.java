@@ -1,5 +1,7 @@
 package com.zhupeng.common.sys.feign;
 
+import com.zhupeng.common.sys.chain.context.SpanIdContext;
+import com.zhupeng.common.sys.constant.ServiceConstant;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -16,6 +18,10 @@ import java.util.Enumeration;
 public class FeignRequestHeaderInterceptor implements RequestInterceptor {
     @Override
     public void apply(RequestTemplate requestTemplate) {
+        String spanId = SpanIdContext.getSpanIdOnThreadLocal();
+
+        requestTemplate.header(ServiceConstant.REQUEST_SPANID , spanId);
+
         //当前feign远程调用环境不是由http接口发起，例如test单元测试中的feign调用或者项目启动后的feign调用
         HttpServletRequest request = null;
 
