@@ -14,11 +14,11 @@ public class DefualtExceptionHandler {
      * @param e
      * @return
      */
-    @ExceptionHandler(BusinessException.class)
-    public ResponseResult businessException(BusinessException e){
+    @ExceptionHandler(BaseException.class)
+    public ResponseResult baseException(BaseException e){
         e.printStackTrace();
         log.error("异常信息：" + e.toString());
-        return new ResponseResult(e.getCode() , null , e.getErrorMessage());
+        return new ResponseResult(e.getCode() , e.getData() , e.getErrorMessage());
     }
 
 

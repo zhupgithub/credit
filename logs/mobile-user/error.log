@@ -1,21 +1,16 @@
-2020-04-08 22:20:08,404 [HystrixTimer-1] ERROR [c.z.common.api.pc.user.fallback.PcUserApiFallback] PcUserApiFallback.java:22 - 添加失败 , 失败详细信息：com.netflix.hystrix.exception.HystrixTimeoutException
-2020-04-08 22:20:51,936 [XNIO-1 task-1] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
-2020-04-08 22:22:27,735 [XNIO-1 task-7] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
-2020-04-08 22:26:32,972 [AMQP Connection 127.0.0.1:5672] ERROR [o.s.a.rabbit.connection.CachingConnectionFactory] CachingConnectionFactory.java:1517 - Channel shutdown: connection error
-2020-04-08 22:26:32,974 [AMQP Connection 127.0.0.1:5672] ERROR [o.s.a.rabbit.connection.CachingConnectionFactory] CachingConnectionFactory.java:1517 - Channel shutdown: connection error
-2020-04-08 22:26:33,167 [XNIO-1 task-11] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
-2020-04-08 22:27:51,804 [hystrix-pc-user-1] ERROR [c.z.common.api.pc.user.fallback.PcUserApiFallback] PcUserApiFallback.java:22 - 添加失败 , 失败详细信息：java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: pc-user
-2020-04-08 22:27:59,757 [XNIO-1 task-5] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
-2020-04-08 22:28:04,629 [hystrix-pc-user-2] ERROR [c.z.common.api.pc.user.fallback.PcUserApiFallback] PcUserApiFallback.java:22 - 添加失败 , 失败详细信息：java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: pc-user
-2020-04-08 22:28:22,819 [XNIO-1 task-6] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
-2020-04-08 22:28:27,385 [hystrix-pc-user-3] ERROR [c.z.common.api.pc.user.fallback.PcUserApiFallback] PcUserApiFallback.java:22 - 添加失败 , 失败详细信息：java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: pc-user
-2020-04-08 22:29:38,991 [XNIO-1 task-9] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
-2020-04-08 22:37:54,540 [AMQP Connection 127.0.0.1:5672] ERROR [o.s.a.rabbit.connection.CachingConnectionFactory] CachingConnectionFactory.java:1517 - Channel shutdown: connection error
-2020-04-08 22:37:54,541 [AMQP Connection 127.0.0.1:5672] ERROR [o.s.a.rabbit.connection.CachingConnectionFactory] CachingConnectionFactory.java:1517 - Channel shutdown: connection error
-2020-04-08 22:37:54,562 [XNIO-1 task-10] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
-2020-04-08 22:37:54,698 [XNIO-1 task-12] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
-2020-04-08 22:37:56,066 [XNIO-1 task-11] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
-2020-04-09 21:52:31,282 [Thread-73] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:91 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
+2020-04-12 23:27:42,227 00e0a945-0c8f-40a4-821a-ebc4cf913a71  323204ea-9aa0-436b-b19d-1a1bfd5705bd [XNIO-1 task-1] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
+2020-04-12 23:31:39,744 traceId : 4e232a79-b128-4a5d-bc17-280b4f7f2111 parentId :  spanId : a03f50d6-9ac1-4792-ab7f-8f1e16d1d090 [XNIO-1 task-1] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
+2020-04-12 23:36:59,018 [traceId :  parentId :  spanId : ] [HystrixTimer-1] ERROR [c.z.common.api.pc.user.fallback.PcUserApiFallback] PcUserApiFallback.java:22 - 添加失败 , 失败详细信息：com.netflix.hystrix.exception.HystrixTimeoutException
+2020-04-12 23:36:59,060 [traceId : 16d2daa5-e9ee-444a-925a-cbd665d95d15 parentId :  spanId : c7c4f193-3481-4439-b212-d48235d380e0] [XNIO-1 task-1] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
+2020-04-12 23:37:15,353 [traceId :  parentId :  spanId : ] [hystrix-pc-user-2] ERROR [c.z.common.api.pc.user.fallback.PcUserApiFallback] PcUserApiFallback.java:22 - 添加失败 , 失败详细信息：java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: pc-user
+2020-04-12 23:37:15,377 [traceId : a9f19d44-5e75-4916-8bbe-63e07b7541c4 parentId :  spanId : b1946cf9-0a54-4f88-b417-39a22ace5ac1] [XNIO-1 task-2] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
+2020-04-12 23:37:49,581 [traceId : c8222628-f62f-4a39-924d-504af1affa7a parentId :  spanId : d8ef8615-df3b-4c93-ba60-c0130364a49c] [XNIO-1 task-3] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
+2020-04-12 23:39:16,597 [traceId :  parentId :  spanId : ] [HystrixTimer-1] ERROR [c.z.common.api.pc.user.fallback.PcUserApiFallback] PcUserApiFallback.java:22 - 添加失败 , 失败详细信息：com.netflix.hystrix.exception.HystrixTimeoutException
+2020-04-12 23:39:16,619 [traceId : 1ac2d902-b9eb-468b-b2eb-4d507347fd17 parentId :  spanId : 830e15bf-c94a-40d7-a93a-ac3250e95f29] [XNIO-1 task-4] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
+2020-04-12 23:41:12,127 [traceId : 7b537c7f-affa-4c52-85cb-78281b43a9ce parentId :  spanId : af80ae2c-cb8a-4a12-ad7a-14d9f85c929a] [XNIO-1 task-5] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
+2020-04-12 23:42:57,395 [traceId :  parentId :  spanId : ] [HystrixTimer-1] ERROR [c.z.common.api.pc.user.fallback.PcUserApiFallback] PcUserApiFallback.java:22 - 添加失败 , 失败详细信息：com.netflix.hystrix.exception.HystrixTimeoutException
+2020-04-12 23:42:57,477 [traceId : 0be6a5cc-8139-4d6e-be5e-cf03d7481911 parentId :  spanId : b9c808a4-0f99-4db7-8c3a-4378d6543685] [XNIO-1 task-1] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
+2020-04-13 00:10:28,773 [traceId :  parentId :  spanId : ] [Thread-86] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:91 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
@@ -79,7 +74,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 41 common frames omitted
-2020-04-09 21:52:33,357 [Thread-73] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:83 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
+2020-04-13 00:10:30,784 [traceId :  parentId :  spanId : ] [Thread-86] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:83 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
@@ -144,207 +139,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 42 common frames omitted
-2020-04-09 21:52:33,361 [Thread-73] ERROR [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:944 - DiscoveryClient_MOBILE-USER/SD-20181223DEXT:mobile-user:9763 - de-registration failedCannot execute request on any known server
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:941)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:919)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1040)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1033)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
-	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
-2020-04-10 00:12:57,364 [main] ERROR [o.s.b.diagnostics.LoggingFailureAnalysisReporter] LoggingFailureAnalysisReporter.java:40 - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field redisTemplate in com.zhupeng.common.utils.redis.RedisUtil required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
-
-2020-04-10 00:14:59,402 [main] ERROR [o.s.b.diagnostics.LoggingFailureAnalysisReporter] LoggingFailureAnalysisReporter.java:40 - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field redisTemplate in com.zhupeng.common.utils.redis.RedisUtil required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
-
-2020-04-10 00:17:46,070 [HystrixTimer-1] ERROR [c.z.common.api.pc.user.fallback.PcUserApiFallback] PcUserApiFallback.java:22 - 添加失败 , 失败详细信息：com.netflix.hystrix.exception.HystrixTimeoutException
-2020-04-10 00:17:56,431 [XNIO-1 task-1] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
-2020-04-10 00:18:15,408 [HystrixTimer-1] ERROR [c.z.common.api.pc.user.fallback.PcUserApiFallback] PcUserApiFallback.java:22 - 添加失败 , 失败详细信息：com.netflix.hystrix.exception.HystrixTimeoutException
-2020-04-10 00:18:22,794 [XNIO-1 task-2] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
-2020-04-10 00:19:15,348 [HystrixTimer-2] ERROR [c.z.common.api.pc.user.fallback.PcUserApiFallback] PcUserApiFallback.java:22 - 添加失败 , 失败详细信息：com.netflix.hystrix.exception.HystrixTimeoutException
-2020-04-10 00:19:15,359 [XNIO-1 task-3] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
-2020-04-10 00:40:55,919 [Thread-48] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:91 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
-com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:941)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:919)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1040)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1033)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
-	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 41 common frames omitted
-2020-04-10 00:40:57,920 [Thread-48] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:83 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
-com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:941)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:919)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1040)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1033)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
-	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 42 common frames omitted
-2020-04-10 00:40:57,923 [Thread-48] ERROR [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:944 - DiscoveryClient_MOBILE-USER/SD-20181223DEXT:mobile-user:9763 - de-registration failedCannot execute request on any known server
+2020-04-13 00:10:30,787 [traceId :  parentId :  spanId : ] [Thread-86] ERROR [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:944 - DiscoveryClient_MOBILE-USER/SD-20181223DEXT:mobile-user:9763 - de-registration failedCannot execute request on any known server
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)

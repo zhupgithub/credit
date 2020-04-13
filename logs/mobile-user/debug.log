@@ -1,291 +1,21 @@
-2020-04-10 00:02:57,933 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-04-10 00:07:57,950 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-04-10 00:12:21,444 [Thread-75] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:65 - Unregistering application MOBILE-USER with eureka with status DOWN
-2020-04-10 00:12:21,451 [Thread-75] WARN  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1321 - Saw local status change event StatusChangeEvent [timestamp=1586448741451, current=DOWN, previous=UP]
-2020-04-10 00:12:21,457 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:844 - DiscoveryClient_MOBILE-USER/SD-20181223DEXT:mobile-user:9763: registering service...
-2020-04-10 00:12:21,472 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:853 - DiscoveryClient_MOBILE-USER/SD-20181223DEXT:mobile-user:9763 - registration status: 204
-2020-04-10 00:12:21,588 [Thread-75] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:591 - Waiting for workers to finish.
-2020-04-10 00:12:21,810 [Thread-75] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:594 - Successfully waited for workers to finish.
-2020-04-10 00:12:21,811 [Thread-75] INFO  [o.s.i.amqp.inbound.AmqpInboundChannelAdapter] AbstractEndpoint.java:176 - stopped inbound.springCloudBus.anonymous.o2_M-baPTGOTvNkzDcweNA
-2020-04-10 00:12:21,822 [Thread-75] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'mobile-user-1.springCloudBus.anonymous.o2_M-baPTGOTvNkzDcweNA.errors' has 1 subscriber(s).
-2020-04-10 00:12:21,823 [Thread-75] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'mobile-user-1.springCloudBus.anonymous.o2_M-baPTGOTvNkzDcweNA.errors' has 0 subscriber(s).
-2020-04-10 00:12:21,833 [Thread-75] INFO  [o.s.integration.endpoint.EventDrivenConsumer] EventDrivenConsumer.java:107 - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-04-10 00:12:21,835 [Thread-75] INFO  [o.s.integration.channel.PublishSubscribeChannel] AbstractSubscribableChannel.java:64 - Channel 'mobile-user-1.errorChannel' has 0 subscriber(s).
-2020-04-10 00:12:21,836 [Thread-75] INFO  [o.s.integration.endpoint.EventDrivenConsumer] AbstractEndpoint.java:193 - stopped _org.springframework.integration.errorLogger
-2020-04-10 00:12:21,852 [Thread-75] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'
-2020-04-10 00:12:21,874 [Thread-75] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskScheduler'
-2020-04-10 00:12:23,085 [Thread-75] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: errorChannel
-2020-04-10 00:12:23,088 [Thread-75] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBusInput
-2020-04-10 00:12:23,088 [Thread-75] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: nullChannel
-2020-04-10 00:12:23,088 [Thread-75] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBusOutput
-2020-04-10 00:12:23,088 [Thread-75] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBus.anonymous.o2_M-baPTGOTvNkzDcweNA.errors
-2020-04-10 00:12:23,089 [Thread-75] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:498 - Summary on shutdown: _org.springframework.integration.errorLogger.handler
-2020-04-10 00:12:23,089 [Thread-75] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:498 - Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@51f009ef
-2020-04-10 00:12:23,091 [Thread-75] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:906 - Shutting down DiscoveryClient ...
-2020-04-10 00:12:26,094 [Thread-75] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:940 - Unregistering ...
-2020-04-10 00:12:26,104 [Thread-75] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:942 - DiscoveryClient_MOBILE-USER/SD-20181223DEXT:mobile-user:9763 - deregister  status: 200
-2020-04-10 00:12:26,148 [Thread-75] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:929 - Completed shut down of DiscoveryClient
-2020-04-10 00:12:26,153 [Thread-75] INFO  [io.undertow.servlet] ServletContextImpl.java:364 - Destroying Spring FrameworkServlet 'dispatcherServlet'
-2020-04-10 00:12:44,083 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$18484893] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:12:44,692 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:188 - Multiple Config Server Urls found listed.
-2020-04-10 00:12:44,694 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9762
-2020-04-10 00:12:46,005 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:230 - Connect Timeout Exception on Url - http://127.0.0.1:9762. Will be trying the next url if available
-2020-04-10 00:12:46,006 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9760
-2020-04-10 00:12:46,412 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=mobile-user, profiles=[native], label=null, version=null, state=null
-2020-04-10 00:12:46,413 [main] INFO  [o.s.c.b.c.PropertySourceBootstrapConfiguration] PropertySourceBootstrapConfiguration.java:101 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='classpath:/native-config/mobile-user-native.yml'}, MapPropertySource {name='classpath:/native-config/application-native.yml'}]}
-2020-04-10 00:12:46,424 [main] INFO  [c.zhupeng.master.mobile.user.MobileUserApplication] SpringApplication.java:652 - The following profiles are active: native
-2020-04-10 00:12:48,027 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:131 - Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
-2020-04-10 00:12:48,730 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-04-10 00:12:48,736 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-04-10 00:12:48,777 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:182 - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
-2020-04-10 00:12:48,847 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:131 - Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
-2020-04-10 00:12:48,968 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:131 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-04-10 00:12:49,672 [main] INFO  [o.springframework.cloud.context.scope.GenericScope] GenericScope.java:295 - BeanFactory id=6f337fd4-3890-3972-90aa-844ec346c635
-2020-04-10 00:12:49,690 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:193 - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
-2020-04-10 00:12:49,705 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:280 - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
-2020-04-10 00:12:49,722 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:431 - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
-2020-04-10 00:12:49,781 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'com.zhupeng.common.api.mobile.user.MobileUserApi' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:12:49,783 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'com.zhupeng.common.api.pc.user.PcUserApi' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:12:50,267 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:12:50,545 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$672000c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:12:50,599 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration$$EnhancerBySpringCGLIB$$42b20be5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:12:50,621 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$$EnhancerBySpringCGLIB$$7b99b4b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:12:50,635 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:12:50,750 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$18484893] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:12:51,464 [main] WARN  [io.undertow.websockets.jsr] Bootstrap.java:68 - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2020-04-10 00:12:51,528 [main] INFO  [io.undertow.servlet] ServletContextImpl.java:364 - Initializing Spring embedded WebApplicationContext
-2020-04-10 00:12:51,529 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:284 - Root WebApplicationContext: initialization completed in 5073 ms
-2020-04-10 00:12:51,913 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
-2020-04-10 00:12:51,914 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-04-10 00:12:51,959 [main] INFO  [com.netflix.config.util.ConfigurationUtils] ConfigurationUtils.java:183 - Loaded properties file file:/D:/workspace/zhupeng/GIT/credit/common/common-core/target/classes/hystrix-plugins.properties
-2020-04-10 00:12:51,982 [main] INFO  [com.netflix.config.DynamicPropertyFactory] DynamicPropertyFactory.java:281 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@42cc420b
-2020-04-10 00:12:54,266 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskScheduler'
-2020-04-10 00:12:54,989 [main] INFO  [o.s.b.a.endpoint.web.ServletEndpointRegistrar] ServletEndpointRegistrar.java:74 - Registered '/actuator/jolokia' to jolokia-actuator-endpoint
-2020-04-10 00:12:56,151 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
-2020-04-10 00:12:56,151 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-04-10 00:12:56,525 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-10 00:12:56,832 [main] WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] AbstractApplicationContext.java:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.zhupeng.common.utils.redis.RedisUtil': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.core.RedisTemplate<java.lang.String, java.lang.Object>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2020-04-10 00:12:56,833 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'
-2020-04-10 00:12:56,841 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskScheduler'
-2020-04-10 00:12:56,902 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener] ConditionEvaluationReportLoggingListener.java:136 - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-04-10 00:12:57,364 [main] ERROR [o.s.b.diagnostics.LoggingFailureAnalysisReporter] LoggingFailureAnalysisReporter.java:40 - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field redisTemplate in com.zhupeng.common.utils.redis.RedisUtil required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
-
-2020-04-10 00:14:43,647 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e3ce3a04] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:14:44,245 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:188 - Multiple Config Server Urls found listed.
-2020-04-10 00:14:44,247 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9762
-2020-04-10 00:14:45,524 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:230 - Connect Timeout Exception on Url - http://127.0.0.1:9762. Will be trying the next url if available
-2020-04-10 00:14:45,525 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9760
-2020-04-10 00:14:45,924 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=mobile-user, profiles=[native], label=null, version=null, state=null
-2020-04-10 00:14:45,925 [main] INFO  [o.s.c.b.c.PropertySourceBootstrapConfiguration] PropertySourceBootstrapConfiguration.java:101 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='classpath:/native-config/mobile-user-native.yml'}, MapPropertySource {name='classpath:/native-config/application-native.yml'}]}
-2020-04-10 00:14:45,938 [main] INFO  [c.zhupeng.master.mobile.user.MobileUserApplication] SpringApplication.java:652 - The following profiles are active: native
-2020-04-10 00:14:47,515 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:131 - Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
-2020-04-10 00:14:48,175 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-04-10 00:14:48,179 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-04-10 00:14:48,232 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:182 - Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
-2020-04-10 00:14:48,332 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:131 - Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
-2020-04-10 00:14:48,450 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:131 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-04-10 00:14:49,109 [main] INFO  [o.springframework.cloud.context.scope.GenericScope] GenericScope.java:295 - BeanFactory id=6f337fd4-3890-3972-90aa-844ec346c635
-2020-04-10 00:14:49,132 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:193 - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
-2020-04-10 00:14:49,151 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:280 - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
-2020-04-10 00:14:49,170 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:431 - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
-2020-04-10 00:14:49,227 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'com.zhupeng.common.api.mobile.user.MobileUserApi' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:14:49,229 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'com.zhupeng.common.api.pc.user.PcUserApi' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:14:49,729 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:14:50,005 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$32a5f236] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:14:50,063 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration$$EnhancerBySpringCGLIB$$e37fd56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:14:50,103 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$$EnhancerBySpringCGLIB$$471fa623] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:14:50,121 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:14:50,253 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e3ce3a04] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:14:50,958 [main] WARN  [io.undertow.websockets.jsr] Bootstrap.java:68 - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2020-04-10 00:14:51,033 [main] INFO  [io.undertow.servlet] ServletContextImpl.java:364 - Initializing Spring embedded WebApplicationContext
-2020-04-10 00:14:51,034 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:284 - Root WebApplicationContext: initialization completed in 5062 ms
-2020-04-10 00:14:51,384 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
-2020-04-10 00:14:51,385 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-04-10 00:14:51,432 [main] INFO  [com.netflix.config.util.ConfigurationUtils] ConfigurationUtils.java:183 - Loaded properties file file:/D:/workspace/zhupeng/GIT/credit/common/common-core/target/classes/hystrix-plugins.properties
-2020-04-10 00:14:51,454 [main] INFO  [com.netflix.config.DynamicPropertyFactory] DynamicPropertyFactory.java:281 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1a4083f6
-2020-04-10 00:14:53,821 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskScheduler'
-2020-04-10 00:14:54,890 [main] INFO  [o.s.b.a.endpoint.web.ServletEndpointRegistrar] ServletEndpointRegistrar.java:74 - Registered '/actuator/jolokia' to jolokia-actuator-endpoint
-2020-04-10 00:14:57,213 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
-2020-04-10 00:14:57,214 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-04-10 00:14:57,855 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-10 00:14:58,516 [main] WARN  [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] AbstractApplicationContext.java:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.zhupeng.common.utils.redis.RedisUtil': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.core.RedisTemplate<java.lang.String, java.lang.Object>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2020-04-10 00:14:58,517 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'
-2020-04-10 00:14:58,529 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskScheduler'
-2020-04-10 00:14:58,605 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener] ConditionEvaluationReportLoggingListener.java:136 - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-04-10 00:14:59,402 [main] ERROR [o.s.b.diagnostics.LoggingFailureAnalysisReporter] LoggingFailureAnalysisReporter.java:40 - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field redisTemplate in com.zhupeng.common.utils.redis.RedisUtil required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
-
-
-Action:
-
-Consider defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
-
-2020-04-10 00:16:21,610 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9e7ff5a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:16:22,076 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:188 - Multiple Config Server Urls found listed.
-2020-04-10 00:16:22,078 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9762
-2020-04-10 00:16:23,307 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:230 - Connect Timeout Exception on Url - http://127.0.0.1:9762. Will be trying the next url if available
-2020-04-10 00:16:23,307 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9760
-2020-04-10 00:16:23,596 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=mobile-user, profiles=[native], label=null, version=null, state=null
-2020-04-10 00:16:23,597 [main] INFO  [o.s.c.b.c.PropertySourceBootstrapConfiguration] PropertySourceBootstrapConfiguration.java:101 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='classpath:/native-config/mobile-user-native.yml'}, MapPropertySource {name='classpath:/native-config/application-native.yml'}]}
-2020-04-10 00:16:23,606 [main] INFO  [c.zhupeng.master.mobile.user.MobileUserApplication] SpringApplication.java:652 - The following profiles are active: native
-2020-04-10 00:16:24,919 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:131 - Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
-2020-04-10 00:16:25,502 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-04-10 00:16:25,505 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-04-10 00:16:25,539 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:182 - Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
-2020-04-10 00:16:25,593 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:131 - Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
-2020-04-10 00:16:25,694 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:131 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-04-10 00:16:26,308 [main] INFO  [o.springframework.cloud.context.scope.GenericScope] GenericScope.java:295 - BeanFactory id=6613851a-93a7-364b-a655-b3158ae57379
-2020-04-10 00:16:26,330 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:193 - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
-2020-04-10 00:16:26,344 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:280 - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
-2020-04-10 00:16:26,358 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:431 - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
-2020-04-10 00:16:26,409 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'com.zhupeng.common.api.mobile.user.MobileUserApi' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:16:26,411 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'com.zhupeng.common.api.pc.user.PcUserApi' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:16:26,821 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:16:27,061 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$ed57add4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:16:27,094 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration$$EnhancerBySpringCGLIB$$c8e9b8f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:16:27,115 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$$EnhancerBySpringCGLIB$$1d161c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:16:27,129 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:16:27,218 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9e7ff5a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-10 00:16:27,763 [main] WARN  [io.undertow.websockets.jsr] Bootstrap.java:68 - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2020-04-10 00:16:27,813 [main] INFO  [io.undertow.servlet] ServletContextImpl.java:364 - Initializing Spring embedded WebApplicationContext
-2020-04-10 00:16:27,814 [main] INFO  [org.springframework.web.context.ContextLoader] ServletWebServerApplicationContext.java:284 - Root WebApplicationContext: initialization completed in 4180 ms
-2020-04-10 00:16:28,096 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
-2020-04-10 00:16:28,096 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-04-10 00:16:28,133 [main] INFO  [com.netflix.config.util.ConfigurationUtils] ConfigurationUtils.java:183 - Loaded properties file file:/D:/workspace/zhupeng/GIT/credit/common/common-core/target/classes/hystrix-plugins.properties
-2020-04-10 00:16:28,150 [main] INFO  [com.netflix.config.DynamicPropertyFactory] DynamicPropertyFactory.java:281 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@51132514
-2020-04-10 00:16:30,237 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskScheduler'
-2020-04-10 00:16:30,910 [main] INFO  [o.s.b.a.endpoint.web.ServletEndpointRegistrar] ServletEndpointRegistrar.java:74 - Registered '/actuator/jolokia' to jolokia-actuator-endpoint
-2020-04-10 00:16:32,097 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
-2020-04-10 00:16:32,098 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-04-10 00:16:32,508 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-10 00:16:34,829 [main] INFO  [o.s.b.actuate.endpoint.web.EndpointLinksResolver] EndpointLinksResolver.java:58 - Exposing 25 endpoint(s) beneath base path '/actuator'
-2020-04-10 00:16:35,083 [main] INFO  [o.s.c.stream.messaging.DirectWithAttributesChannel] AbstractSubscribableChannel.java:64 - Channel 'mobile-user-1.springCloudBusInput' has 1 subscriber(s).
-2020-04-10 00:16:35,388 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:767 - Registering MessageChannel springCloudBusOutput
-2020-04-10 00:16:35,559 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:767 - Registering MessageChannel nullChannel
-2020-04-10 00:16:35,592 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:767 - Registering MessageChannel springCloudBusInput
-2020-04-10 00:16:35,609 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:767 - Registering MessageChannel errorChannel
-2020-04-10 00:16:35,714 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:785 - Registering MessageHandler errorLogger
-2020-04-10 00:16:35,765 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:785 - Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@6c3a7b84
-2020-04-10 00:16:35,984 [main] INFO  [o.s.integration.endpoint.EventDrivenConsumer] EventDrivenConsumer.java:107 - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-04-10 00:16:35,984 [main] INFO  [o.s.integration.channel.PublishSubscribeChannel] AbstractSubscribableChannel.java:64 - Channel 'mobile-user-1.errorChannel' has 1 subscriber(s).
-2020-04-10 00:16:35,985 [main] INFO  [o.s.integration.endpoint.EventDrivenConsumer] AbstractEndpoint.java:159 - started _org.springframework.integration.errorLogger
-2020-04-10 00:16:36,322 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:188 - Multiple Config Server Urls found listed.
-2020-04-10 00:16:36,322 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9762
-2020-04-10 00:16:37,328 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:230 - Connect Timeout Exception on Url - http://127.0.0.1:9762. Will be trying the next url if available
-2020-04-10 00:16:37,329 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9760
-2020-04-10 00:16:37,595 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=mobile-user, profiles=[native], label=null, version=null, state=null
-2020-04-10 00:16:37,595 [main] INFO  [o.s.c.b.c.PropertySourceBootstrapConfiguration] PropertySourceBootstrapConfiguration.java:101 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='classpath:/native-config/mobile-user-native.yml'}, MapPropertySource {name='classpath:/native-config/application-native.yml'}]}
-2020-04-10 00:16:38,052 [main] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-04-10 00:16:38,133 [main] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:517 - Created new connection: rabbitConnectionFactory#42211e04:0/SimpleConnection@68838767 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 56346]
-2020-04-10 00:16:38,228 [main] INFO  [o.s.c.stream.messaging.DirectWithAttributesChannel] AbstractSubscribableChannel.java:64 - Channel 'mobile-user-1.springCloudBusOutput' has 1 subscriber(s).
-2020-04-10 00:16:38,266 [main] INFO  [o.s.cloud.netflix.eureka.InstanceInfoFactory] InstanceInfoFactory.java:72 - Setting initial instance status as: STARTING
-2020-04-10 00:16:38,354 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:365 - Initializing Eureka in region us-east-1
-2020-04-10 00:16:38,865 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:70 - Using JSON encoding codec LegacyJacksonJson
-2020-04-10 00:16:38,865 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:71 - Using JSON decoding codec LegacyJacksonJson
-2020-04-10 00:16:39,164 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:80 - Using XML encoding codec XStreamXml
-2020-04-10 00:16:39,165 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:81 - Using XML decoding codec XStreamXml
-2020-04-10 00:16:39,810 [main] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-04-10 00:16:39,990 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:976 - Disable delta property : false
-2020-04-10 00:16:39,990 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:977 - Single vip registry refresh property : null
-2020-04-10 00:16:39,991 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:978 - Force full registry fetch : false
-2020-04-10 00:16:39,991 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:979 - Application is null : false
-2020-04-10 00:16:39,991 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:980 - Registered Applications size is zero : true
-2020-04-10 00:16:39,992 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:982 - Application version is -1: true
-2020-04-10 00:16:39,992 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1065 - Getting all instance registry info from the eureka server
-2020-04-10 00:16:40,524 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1074 - The response status is 200
-2020-04-10 00:16:40,530 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1288 - Starting heartbeat executor: renew interval is: 5
-2020-04-10 00:16:40,535 [main] INFO  [com.netflix.discovery.InstanceInfoReplicator] InstanceInfoReplicator.java:60 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-04-10 00:16:40,543 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:465 - Discovery Client initialized at timestamp 1586449000541 with initial instances count: 4
-2020-04-10 00:16:40,560 [main] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:41 - Registering application MOBILE-USER with eureka with status UP
-2020-04-10 00:16:40,561 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1323 - Saw local status change event StatusChangeEvent [timestamp=1586449000561, current=UP, previous=STARTING]
-2020-04-10 00:16:40,568 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:844 - DiscoveryClient_MOBILE-USER/SD-20181223DEXT:mobile-user:9763: registering service...
-2020-04-10 00:16:40,669 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:853 - DiscoveryClient_MOBILE-USER/SD-20181223DEXT:mobile-user:9763 - registration status: 204
-2020-04-10 00:16:40,677 [main] INFO  [o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner] RabbitExchangeQueueProvisioner.java:168 - declaring queue for inbound: springCloudBus.anonymous.1OfO5NwbRsCuoUzaIsRcvg, bound to: springCloudBus
-2020-04-10 00:16:40,734 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:767 - Registering MessageChannel springCloudBus.anonymous.1OfO5NwbRsCuoUzaIsRcvg.errors
-2020-04-10 00:16:41,030 [main] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'mobile-user-1.springCloudBus.anonymous.1OfO5NwbRsCuoUzaIsRcvg.errors' has 1 subscriber(s).
-2020-04-10 00:16:41,032 [main] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'mobile-user-1.springCloudBus.anonymous.1OfO5NwbRsCuoUzaIsRcvg.errors' has 2 subscriber(s).
-2020-04-10 00:16:41,086 [main] INFO  [o.s.i.amqp.inbound.AmqpInboundChannelAdapter] AbstractEndpoint.java:159 - started inbound.springCloudBus.anonymous.1OfO5NwbRsCuoUzaIsRcvg
-2020-04-10 00:16:41,194 [main] INFO  [org.xnio] Xnio.java:104 - XNIO version 3.3.8.Final
-2020-04-10 00:16:41,215 [main] INFO  [org.xnio.nio] NioXnio.java:55 - XNIO NIO Implementation Version 3.3.8.Final
-2020-04-10 00:16:41,319 [main] INFO  [o.s.b.w.embedded.undertow.UndertowServletWebServer] UndertowServletWebServer.java:144 - Undertow started on port(s) 9763 (http) with context path ''
-2020-04-10 00:16:41,321 [main] INFO  [o.s.c.n.e.s.EurekaAutoServiceRegistration] EurekaAutoServiceRegistration.java:145 - Updating port to 9763
-2020-04-10 00:16:41,502 [main] INFO  [c.zhupeng.master.mobile.user.MobileUserApplication] StartupInfoLogger.java:59 - Started MobileUserApplication in 23.165 seconds (JVM running for 25.691)
-2020-04-10 00:16:41,507 [main] INFO  [c.zhupeng.master.mobile.user.MobileUserApplication] MobileUserApplication.java:20 - mobile-user业务系统启动完成！
-2020-04-10 00:16:42,078 [RMI TCP Connection(1)-192.168.50.103] INFO  [io.undertow.servlet] ServletContextImpl.java:364 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-04-10 00:16:42,079 [RMI TCP Connection(1)-192.168.50.103] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:525 - Initializing Servlet 'dispatcherServlet'
-2020-04-10 00:16:42,095 [RMI TCP Connection(2)-192.168.50.103] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:188 - Multiple Config Server Urls found listed.
-2020-04-10 00:16:42,096 [RMI TCP Connection(2)-192.168.50.103] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9762
-2020-04-10 00:16:42,113 [RMI TCP Connection(1)-192.168.50.103] INFO  [org.springframework.web.servlet.DispatcherServlet] FrameworkServlet.java:547 - Completed initialization in 34 ms
-2020-04-10 00:16:43,106 [RMI TCP Connection(2)-192.168.50.103] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:230 - Connect Timeout Exception on Url - http://127.0.0.1:9762. Will be trying the next url if available
-2020-04-10 00:16:43,107 [RMI TCP Connection(2)-192.168.50.103] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9760
-2020-04-10 00:16:43,380 [RMI TCP Connection(2)-192.168.50.103] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=mobile-user, profiles=[native], label=null, version=null, state=null
-2020-04-10 00:16:43,566 [parallel-1] INFO  [io.lettuce.core.EpollProvider] EpollProvider.java:68 - Starting without optional epoll library
-2020-04-10 00:16:43,570 [parallel-1] INFO  [io.lettuce.core.KqueueProvider] KqueueProvider.java:70 - Starting without optional kqueue library
-2020-04-10 00:17:45,488 [hystrix-pc-user-1] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: pc-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2020-04-10 00:17:45,565 [hystrix-pc-user-1] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:58 - Shutdown hook installed for: NFLoadBalancer-PingTimer-pc-user
-2020-04-10 00:17:45,567 [hystrix-pc-user-1] INFO  [com.netflix.loadbalancer.BaseLoadBalancer] BaseLoadBalancer.java:197 - Client: pc-user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=pc-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
-2020-04-10 00:17:45,581 [hystrix-pc-user-1] INFO  [c.n.loadbalancer.DynamicServerListLoadBalancer] DynamicServerListLoadBalancer.java:222 - Using serverListUpdater PollingServerListUpdater
-2020-04-10 00:17:45,637 [hystrix-pc-user-1] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: pc-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2020-04-10 00:17:45,641 [hystrix-pc-user-1] INFO  [c.n.loadbalancer.DynamicServerListLoadBalancer] DynamicServerListLoadBalancer.java:150 - DynamicServerListLoadBalancer for client pc-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=pc-user,current list of Servers=[192.168.50.103:9765],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
-},Server stats: [[Server:192.168.50.103:9765;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
-]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@71a8c206
-2020-04-10 00:17:46,070 [HystrixTimer-1] ERROR [c.z.common.api.pc.user.fallback.PcUserApiFallback] PcUserApiFallback.java:22 - 添加失败 , 失败详细信息：com.netflix.hystrix.exception.HystrixTimeoutException
-2020-04-10 00:17:56,224 [PollingServerListUpdater-0] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: pc-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2020-04-10 00:17:56,431 [XNIO-1 task-1] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
-2020-04-10 00:18:15,408 [HystrixTimer-1] ERROR [c.z.common.api.pc.user.fallback.PcUserApiFallback] PcUserApiFallback.java:22 - 添加失败 , 失败详细信息：com.netflix.hystrix.exception.HystrixTimeoutException
-2020-04-10 00:18:22,794 [XNIO-1 task-2] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
-2020-04-10 00:19:15,348 [HystrixTimer-2] ERROR [c.z.common.api.pc.user.fallback.PcUserApiFallback] PcUserApiFallback.java:22 - 添加失败 , 失败详细信息：com.netflix.hystrix.exception.HystrixTimeoutException
-2020-04-10 00:19:15,359 [XNIO-1 task-3] ERROR [c.z.common.sys.exception.DefualtExceptionHandler] DefualtExceptionHandler.java:33 - 异常信息：java.lang.ArithmeticException: / by zero
-2020-04-10 00:21:40,004 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-04-10 00:26:40,012 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-04-10 00:31:40,018 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-04-10 00:36:40,024 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-04-10 00:40:48,651 [Thread-64] INFO  [com.netflix.loadbalancer.PollingServerListUpdater] PollingServerListUpdater.java:53 - Shutting down the Executor Pool for PollingServerListUpdater
-2020-04-10 00:40:48,653 [Thread-48] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:65 - Unregistering application MOBILE-USER with eureka with status DOWN
-2020-04-10 00:40:48,654 [Thread-48] WARN  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1321 - Saw local status change event StatusChangeEvent [timestamp=1586450448654, current=DOWN, previous=UP]
-2020-04-10 00:40:48,654 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:844 - DiscoveryClient_MOBILE-USER/SD-20181223DEXT:mobile-user:9763: registering service...
-2020-04-10 00:40:48,661 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:853 - DiscoveryClient_MOBILE-USER/SD-20181223DEXT:mobile-user:9763 - registration status: 204
-2020-04-10 00:40:48,678 [Thread-48] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:591 - Waiting for workers to finish.
-2020-04-10 00:40:49,670 [Thread-48] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:594 - Successfully waited for workers to finish.
-2020-04-10 00:40:49,672 [Thread-48] INFO  [o.s.i.amqp.inbound.AmqpInboundChannelAdapter] AbstractEndpoint.java:176 - stopped inbound.springCloudBus.anonymous.1OfO5NwbRsCuoUzaIsRcvg
-2020-04-10 00:40:49,681 [Thread-48] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'mobile-user-1.springCloudBus.anonymous.1OfO5NwbRsCuoUzaIsRcvg.errors' has 1 subscriber(s).
-2020-04-10 00:40:49,682 [Thread-48] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'mobile-user-1.springCloudBus.anonymous.1OfO5NwbRsCuoUzaIsRcvg.errors' has 0 subscriber(s).
-2020-04-10 00:40:49,687 [Thread-48] INFO  [o.s.integration.endpoint.EventDrivenConsumer] EventDrivenConsumer.java:107 - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-04-10 00:40:49,688 [Thread-48] INFO  [o.s.integration.channel.PublishSubscribeChannel] AbstractSubscribableChannel.java:64 - Channel 'mobile-user-1.errorChannel' has 0 subscriber(s).
-2020-04-10 00:40:49,689 [Thread-48] INFO  [o.s.integration.endpoint.EventDrivenConsumer] AbstractEndpoint.java:193 - stopped _org.springframework.integration.errorLogger
-2020-04-10 00:40:49,696 [Thread-48] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'
-2020-04-10 00:40:49,703 [Thread-48] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:67 - Shutdown hook removed for: NFLoadBalancer-PingTimer-pc-user
-2020-04-10 00:40:49,708 [Thread-48] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:72 - Exception caught (might be ok if at shutdown)
+2020-04-13 00:02:15,817 [traceId :  parentId :  spanId : ] [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
+2020-04-13 00:07:15,834 [traceId :  parentId :  spanId : ] [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
+2020-04-13 00:10:21,759 [traceId :  parentId :  spanId : ] [Thread-102] INFO  [com.netflix.loadbalancer.PollingServerListUpdater] PollingServerListUpdater.java:53 - Shutting down the Executor Pool for PollingServerListUpdater
+2020-04-13 00:10:21,760 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:65 - Unregistering application MOBILE-USER with eureka with status DOWN
+2020-04-13 00:10:21,761 [traceId :  parentId :  spanId : ] [Thread-86] WARN  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1321 - Saw local status change event StatusChangeEvent [timestamp=1586707821761, current=DOWN, previous=UP]
+2020-04-13 00:10:21,762 [traceId :  parentId :  spanId : ] [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:844 - DiscoveryClient_MOBILE-USER/SD-20181223DEXT:mobile-user:9763: registering service...
+2020-04-13 00:10:21,767 [traceId :  parentId :  spanId : ] [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:853 - DiscoveryClient_MOBILE-USER/SD-20181223DEXT:mobile-user:9763 - registration status: 204
+2020-04-13 00:10:21,780 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:591 - Waiting for workers to finish.
+2020-04-13 00:10:22,501 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:594 - Successfully waited for workers to finish.
+2020-04-13 00:10:22,502 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.i.amqp.inbound.AmqpInboundChannelAdapter] AbstractEndpoint.java:176 - stopped inbound.springCloudBus.anonymous.U7q7B2CQTUalvXjdsUoQsQ
+2020-04-13 00:10:22,505 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'mobile-user-1.springCloudBus.anonymous.U7q7B2CQTUalvXjdsUoQsQ.errors' has 1 subscriber(s).
+2020-04-13 00:10:22,506 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'mobile-user-1.springCloudBus.anonymous.U7q7B2CQTUalvXjdsUoQsQ.errors' has 0 subscriber(s).
+2020-04-13 00:10:22,511 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.integration.endpoint.EventDrivenConsumer] EventDrivenConsumer.java:107 - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-04-13 00:10:22,513 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.integration.channel.PublishSubscribeChannel] AbstractSubscribableChannel.java:64 - Channel 'mobile-user-1.errorChannel' has 0 subscriber(s).
+2020-04-13 00:10:22,514 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.integration.endpoint.EventDrivenConsumer] AbstractEndpoint.java:193 - stopped _org.springframework.integration.errorLogger
+2020-04-13 00:10:22,522 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-13 00:10:22,528 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:67 - Shutdown hook removed for: NFLoadBalancer-PingTimer-pc-user
+2020-04-13 00:10:22,531 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:72 - Exception caught (might be ok if at shutdown)
 java.lang.IllegalStateException: Shutdown in progress
 	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
 	at java.lang.Runtime.removeShutdownHook(Runtime.java:239)
@@ -317,17 +47,17 @@ java.lang.IllegalStateException: Shutdown in progress
 	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
 	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
-2020-04-10 00:40:49,742 [Thread-48] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskScheduler'
-2020-04-10 00:40:50,896 [Thread-48] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBusOutput
-2020-04-10 00:40:50,896 [Thread-48] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: nullChannel
-2020-04-10 00:40:50,896 [Thread-48] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBusInput
-2020-04-10 00:40:50,897 [Thread-48] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: errorChannel
-2020-04-10 00:40:50,897 [Thread-48] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBus.anonymous.1OfO5NwbRsCuoUzaIsRcvg.errors
-2020-04-10 00:40:50,897 [Thread-48] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:498 - Summary on shutdown: _org.springframework.integration.errorLogger.handler
-2020-04-10 00:40:50,898 [Thread-48] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:498 - Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@6c3a7b84
-2020-04-10 00:40:50,899 [Thread-48] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:906 - Shutting down DiscoveryClient ...
-2020-04-10 00:40:53,902 [Thread-48] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:940 - Unregistering ...
-2020-04-10 00:40:55,919 [Thread-48] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:91 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
+2020-04-13 00:10:22,593 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskScheduler'
+2020-04-13 00:10:23,747 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: nullChannel
+2020-04-13 00:10:23,747 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBusOutput
+2020-04-13 00:10:23,748 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBusInput
+2020-04-13 00:10:23,748 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: errorChannel
+2020-04-13 00:10:23,748 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBus.anonymous.U7q7B2CQTUalvXjdsUoQsQ.errors
+2020-04-13 00:10:23,749 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:498 - Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@6b170692
+2020-04-13 00:10:23,749 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:498 - Summary on shutdown: _org.springframework.integration.errorLogger.handler
+2020-04-13 00:10:23,750 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:906 - Shutting down DiscoveryClient ...
+2020-04-13 00:10:26,752 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:940 - Unregistering ...
+2020-04-13 00:10:28,773 [traceId :  parentId :  spanId : ] [Thread-86] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:91 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
@@ -391,8 +121,8 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 41 common frames omitted
-2020-04-10 00:40:55,921 [Thread-48] WARN  [c.n.d.s.t.decorator.RetryableEurekaHttpClient] RetryableEurekaHttpClient.java:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
-2020-04-10 00:40:57,920 [Thread-48] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:83 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
+2020-04-13 00:10:28,774 [traceId :  parentId :  spanId : ] [Thread-86] WARN  [c.n.d.s.t.decorator.RetryableEurekaHttpClient] RetryableEurekaHttpClient.java:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-04-13 00:10:30,784 [traceId :  parentId :  spanId : ] [Thread-86] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:83 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
@@ -457,8 +187,8 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 42 common frames omitted
-2020-04-10 00:40:57,922 [Thread-48] WARN  [c.n.d.s.t.decorator.RetryableEurekaHttpClient] RetryableEurekaHttpClient.java:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
-2020-04-10 00:40:57,923 [Thread-48] ERROR [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:944 - DiscoveryClient_MOBILE-USER/SD-20181223DEXT:mobile-user:9763 - de-registration failedCannot execute request on any known server
+2020-04-13 00:10:30,786 [traceId :  parentId :  spanId : ] [Thread-86] WARN  [c.n.d.s.t.decorator.RetryableEurekaHttpClient] RetryableEurekaHttpClient.java:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-04-13 00:10:30,787 [traceId :  parentId :  spanId : ] [Thread-86] ERROR [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:944 - DiscoveryClient_MOBILE-USER/SD-20181223DEXT:mobile-user:9763 - de-registration failedCannot execute request on any known server
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
@@ -487,5 +217,5 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
 	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
-2020-04-10 00:40:57,939 [Thread-48] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:929 - Completed shut down of DiscoveryClient
-2020-04-10 00:40:57,942 [Thread-48] INFO  [io.undertow.servlet] ServletContextImpl.java:364 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-13 00:10:30,803 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:929 - Completed shut down of DiscoveryClient
+2020-04-13 00:10:30,806 [traceId :  parentId :  spanId : ] [Thread-86] INFO  [io.undertow.servlet] ServletContextImpl.java:364 - Destroying Spring FrameworkServlet 'dispatcherServlet'

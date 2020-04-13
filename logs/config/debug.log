@@ -1,61 +1,188 @@
-2020-04-10 00:03:26,405 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-04-10 00:08:26,419 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-04-10 00:11:03,155 [XNIO-1 task-4] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/gateway-native.yml
-2020-04-10 00:11:03,158 [XNIO-1 task-4] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/application-native.yml
-2020-04-10 00:11:15,579 [XNIO-1 task-5] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/gateway-native.yml
-2020-04-10 00:11:15,579 [XNIO-1 task-5] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/application-native.yml
-2020-04-10 00:11:21,790 [XNIO-1 task-6] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/gateway-native.yml
-2020-04-10 00:11:21,791 [XNIO-1 task-6] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/application-native.yml
-2020-04-10 00:12:38,549 [XNIO-1 task-7] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/pc-user-native.yml
-2020-04-10 00:12:38,550 [XNIO-1 task-7] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/application-native.yml
-2020-04-10 00:12:46,359 [XNIO-1 task-8] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/mobile-user-native.yml
-2020-04-10 00:12:46,360 [XNIO-1 task-8] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/application-native.yml
-2020-04-10 00:13:26,425 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-04-10 00:14:40,216 [XNIO-1 task-9] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/pc-user-native.yml
-2020-04-10 00:14:40,217 [XNIO-1 task-9] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/application-native.yml
-2020-04-10 00:14:45,870 [XNIO-1 task-10] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/mobile-user-native.yml
-2020-04-10 00:14:45,871 [XNIO-1 task-10] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/application-native.yml
-2020-04-10 00:15:44,934 [XNIO-1 task-11] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/pc-user-native.yml
-2020-04-10 00:15:44,935 [XNIO-1 task-11] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/application-native.yml
-2020-04-10 00:15:58,469 [XNIO-1 task-12] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/pc-user-native.yml
-2020-04-10 00:15:58,469 [XNIO-1 task-12] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/application-native.yml
-2020-04-10 00:16:05,930 [XNIO-1 task-13] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/pc-user-native.yml
-2020-04-10 00:16:05,931 [XNIO-1 task-13] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/application-native.yml
-2020-04-10 00:16:23,558 [XNIO-1 task-14] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/mobile-user-native.yml
-2020-04-10 00:16:23,559 [XNIO-1 task-14] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/application-native.yml
-2020-04-10 00:16:37,590 [XNIO-1 task-15] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/mobile-user-native.yml
-2020-04-10 00:16:37,591 [XNIO-1 task-15] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/application-native.yml
-2020-04-10 00:16:43,373 [XNIO-1 task-16] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/mobile-user-native.yml
-2020-04-10 00:16:43,374 [XNIO-1 task-16] INFO  [o.s.c.c.s.environment.NativeEnvironmentRepository] NativeEnvironmentRepository.java:266 - Adding property source: classpath:/native-config/application-native.yml
-2020-04-10 00:18:26,432 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-04-10 00:23:26,438 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-04-10 00:28:26,444 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-04-10 00:33:26,450 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-04-10 00:38:26,456 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-04-10 00:40:48,418 [Thread-44] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:65 - Unregistering application CONFIG with eureka with status DOWN
-2020-04-10 00:40:48,419 [Thread-44] WARN  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1321 - Saw local status change event StatusChangeEvent [timestamp=1586450448419, current=DOWN, previous=UP]
-2020-04-10 00:40:48,425 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:844 - DiscoveryClient_CONFIG/SD-20181223DEXT:config:9760: registering service...
-2020-04-10 00:40:48,433 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:853 - DiscoveryClient_CONFIG/SD-20181223DEXT:config:9760 - registration status: 204
-2020-04-10 00:40:48,442 [Thread-44] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:591 - Waiting for workers to finish.
-2020-04-10 00:40:48,667 [Thread-44] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:594 - Successfully waited for workers to finish.
-2020-04-10 00:40:48,668 [Thread-44] INFO  [o.s.i.amqp.inbound.AmqpInboundChannelAdapter] AbstractEndpoint.java:176 - stopped inbound.springCloudBus.anonymous.wC-I2aJkSumrFGfJH9GRCQ
-2020-04-10 00:40:48,670 [Thread-44] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'config-1.springCloudBus.anonymous.wC-I2aJkSumrFGfJH9GRCQ.errors' has 1 subscriber(s).
-2020-04-10 00:40:48,671 [Thread-44] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'config-1.springCloudBus.anonymous.wC-I2aJkSumrFGfJH9GRCQ.errors' has 0 subscriber(s).
-2020-04-10 00:40:48,684 [Thread-44] INFO  [o.s.integration.endpoint.EventDrivenConsumer] EventDrivenConsumer.java:107 - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-04-10 00:40:48,686 [Thread-44] INFO  [o.s.integration.channel.PublishSubscribeChannel] AbstractSubscribableChannel.java:64 - Channel 'config-1.errorChannel' has 0 subscriber(s).
-2020-04-10 00:40:48,687 [Thread-44] INFO  [o.s.integration.endpoint.EventDrivenConsumer] AbstractEndpoint.java:193 - stopped _org.springframework.integration.errorLogger
-2020-04-10 00:40:48,699 [Thread-44] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'
-2020-04-10 00:40:48,705 [Thread-44] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskScheduler'
-2020-04-10 00:40:48,731 [Thread-44] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: errorChannel
-2020-04-10 00:40:48,732 [Thread-44] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBusOutput
-2020-04-10 00:40:48,732 [Thread-44] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBus.anonymous.wC-I2aJkSumrFGfJH9GRCQ.errors
-2020-04-10 00:40:48,732 [Thread-44] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: nullChannel
-2020-04-10 00:40:48,732 [Thread-44] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBusInput
-2020-04-10 00:40:48,733 [Thread-44] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:498 - Summary on shutdown: _org.springframework.integration.errorLogger.handler
-2020-04-10 00:40:48,733 [Thread-44] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:498 - Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@4b99648a
-2020-04-10 00:40:48,735 [Thread-44] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:906 - Shutting down DiscoveryClient ...
-2020-04-10 00:40:51,739 [DiscoveryClient-0] WARN  [com.netflix.discovery.TimedSupervisorTask] TimedSupervisorTask.java:88 - task supervisor shutting down, can't accept the task
-2020-04-10 00:40:51,738 [Thread-44] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:940 - Unregistering ...
-2020-04-10 00:40:51,745 [Thread-44] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:942 - DiscoveryClient_CONFIG/SD-20181223DEXT:config:9760 - deregister  status: 200
-2020-04-10 00:40:51,763 [Thread-44] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:929 - Completed shut down of DiscoveryClient
-2020-04-10 00:40:51,766 [Thread-44] INFO  [io.undertow.servlet] ServletContextImpl.java:364 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-13 00:04:11,821 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
+2020-04-13 00:09:11,842 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
+2020-04-13 00:10:21,515 [Thread-48] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:65 - Unregistering application CONFIG with eureka with status DOWN
+2020-04-13 00:10:21,517 [Thread-48] WARN  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1321 - Saw local status change event StatusChangeEvent [timestamp=1586707821517, current=DOWN, previous=UP]
+2020-04-13 00:10:21,518 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:844 - DiscoveryClient_CONFIG/SD-20181223DEXT:config:9760: registering service...
+2020-04-13 00:10:21,526 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:853 - DiscoveryClient_CONFIG/SD-20181223DEXT:config:9760 - registration status: 204
+2020-04-13 00:10:21,550 [Thread-48] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:591 - Waiting for workers to finish.
+2020-04-13 00:10:22,400 [Thread-48] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:594 - Successfully waited for workers to finish.
+2020-04-13 00:10:22,401 [Thread-48] INFO  [o.s.i.amqp.inbound.AmqpInboundChannelAdapter] AbstractEndpoint.java:176 - stopped inbound.springCloudBus.anonymous.1oWweWf9QhKUS0mnTflUYQ
+2020-04-13 00:10:22,403 [Thread-48] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'config-1.springCloudBus.anonymous.1oWweWf9QhKUS0mnTflUYQ.errors' has 1 subscriber(s).
+2020-04-13 00:10:22,404 [Thread-48] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'config-1.springCloudBus.anonymous.1oWweWf9QhKUS0mnTflUYQ.errors' has 0 subscriber(s).
+2020-04-13 00:10:22,410 [Thread-48] INFO  [o.s.integration.endpoint.EventDrivenConsumer] EventDrivenConsumer.java:107 - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-04-13 00:10:22,411 [Thread-48] INFO  [o.s.integration.channel.PublishSubscribeChannel] AbstractSubscribableChannel.java:64 - Channel 'config-1.errorChannel' has 0 subscriber(s).
+2020-04-13 00:10:22,412 [Thread-48] INFO  [o.s.integration.endpoint.EventDrivenConsumer] AbstractEndpoint.java:193 - stopped _org.springframework.integration.errorLogger
+2020-04-13 00:10:22,420 [Thread-48] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-13 00:10:22,423 [Thread-48] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskScheduler'
+2020-04-13 00:10:22,437 [Thread-48] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: errorChannel
+2020-04-13 00:10:22,438 [Thread-48] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBusOutput
+2020-04-13 00:10:22,438 [Thread-48] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBus.anonymous.1oWweWf9QhKUS0mnTflUYQ.errors
+2020-04-13 00:10:22,438 [Thread-48] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: nullChannel
+2020-04-13 00:10:22,438 [Thread-48] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBusInput
+2020-04-13 00:10:22,438 [Thread-48] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:498 - Summary on shutdown: _org.springframework.integration.errorLogger.handler
+2020-04-13 00:10:22,439 [Thread-48] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:498 - Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@2a510e0e
+2020-04-13 00:10:22,440 [Thread-48] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:906 - Shutting down DiscoveryClient ...
+2020-04-13 00:10:25,442 [Thread-48] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:940 - Unregistering ...
+2020-04-13 00:10:25,443 [DiscoveryClient-0] WARN  [com.netflix.discovery.TimedSupervisorTask] TimedSupervisorTask.java:88 - task supervisor shutting down, can't accept the task
+2020-04-13 00:10:27,460 [Thread-48] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:91 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:941)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:919)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1040)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1033)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 41 common frames omitted
+2020-04-13 00:10:27,461 [Thread-48] WARN  [c.n.d.s.t.decorator.RetryableEurekaHttpClient] RetryableEurekaHttpClient.java:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-04-13 00:10:29,490 [Thread-48] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:83 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:941)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:919)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1040)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1033)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 42 common frames omitted
+2020-04-13 00:10:29,491 [Thread-48] WARN  [c.n.d.s.t.decorator.RetryableEurekaHttpClient] RetryableEurekaHttpClient.java:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-04-13 00:10:29,492 [Thread-48] ERROR [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:944 - DiscoveryClient_CONFIG/SD-20181223DEXT:config:9760 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:941)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:919)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1040)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1033)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+2020-04-13 00:10:29,507 [Thread-48] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:929 - Completed shut down of DiscoveryClient
+2020-04-13 00:10:29,512 [Thread-48] INFO  [io.undertow.servlet] ServletContextImpl.java:364 - Destroying Spring FrameworkServlet 'dispatcherServlet'

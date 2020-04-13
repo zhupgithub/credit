@@ -32,7 +32,7 @@ provider（服务提供方，确保提供方提供了正确的功能）。其中
 10、在@EnableFeignClients的注解中，没有添加basePackages属性并赋予值时，将不会Feign的功能（Feign的服务降级和Feign的调用其他服务的功能），这个basePackages属性表示将这包下的类向Feign进行注册（但是我不想要在这儿书写，是否可以在Feign客户端写这个属性）
 11、feign的自定义错误解码器ErrorDecoder，response.body()获取到字符串是一个HTML时，可能是返回的统一异常处理返回的对象没有重写toString（）方法
 12、自定义redisTemplate类时，出现该异常The bean 'redisTemplate', defined in class path resource [com/zhupeng/common/utils/redis/RedisConfig.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class] and overriding is disabled.（使用spring.main.allow-bean-definition-overriding=true无效）
-
+13、写了一个过滤器，总是在自动调用？
 
 
 记录：
