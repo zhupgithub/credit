@@ -5,6 +5,19 @@ spring:
   application:
     name: pc-user
 
+  #数据库的配置
+  datasource:
+    # 配置数据源com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 使用druid连接池
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/credit?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+
+
+
+
   redis:
     hostName: localhost
     port: 6379

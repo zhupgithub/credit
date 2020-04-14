@@ -11,3 +11,11 @@ spring:
       uri:
         - http://127.0.0.1:9762
         - http://127.0.0.1:9760
+
+
+#mybatis-plus的配置
+mybatis-plus:
+  #mapper xml 文件地址
+  mapper-locations: classpath:/com/zhupeng/master/pc/user/mapper/xml/*.xml
+  #type-aliases 文件地址
+  type-aliases-package: com.zhupeng.master.pc.user.entity

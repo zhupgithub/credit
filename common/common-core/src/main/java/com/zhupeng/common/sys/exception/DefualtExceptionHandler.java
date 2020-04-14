@@ -16,8 +16,7 @@ public class DefualtExceptionHandler {
      */
     @ExceptionHandler(BaseException.class)
     public ResponseResult baseException(BaseException e){
-        e.printStackTrace();
-        log.error("异常信息：" + e.toString());
+        log.error("异常信息：{}" , e.toString() , e);
         return new ResponseResult(e.getCode() , e.getData() , e.getErrorMessage());
     }
 
@@ -30,7 +29,7 @@ public class DefualtExceptionHandler {
     @ExceptionHandler(Exception.class)
     public ResponseResult exception(Exception e){
         e.printStackTrace();
-        log.error("异常信息：" + e.toString());
+        log.error("异常信息：{}" , e.toString() , e);
         return new ResponseResult(400 , null , e.toString());
     }
 }

@@ -33,6 +33,15 @@ provider（服务提供方，确保提供方提供了正确的功能）。其中
 11、feign的自定义错误解码器ErrorDecoder，response.body()获取到字符串是一个HTML时，可能是返回的统一异常处理返回的对象没有重写toString（）方法
 12、自定义redisTemplate类时，出现该异常The bean 'redisTemplate', defined in class path resource [com/zhupeng/common/utils/redis/RedisConfig.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class] and overriding is disabled.（使用spring.main.allow-bean-definition-overriding=true无效）
 13、写了一个过滤器，总是在自动调用？
+14、当全局异常中捕抓异常的方法中，返回的数据不是json格式时，返回的数据不是全局异常返回的数据，形式如下：
+{
+    "timestamp": "2020-03-31T11:55:03.104+0000",
+    "status": 404,
+    "error": "Not Found",
+    "message": "Not Found",
+    "path": "/userProvider/remote/addUser"
+}
+当标记返回为json格式时，返回的数据就是全局异常返回的数据
 
 
 记录：
