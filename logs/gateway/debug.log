@@ -1,505 +1,21 @@
-2020-03-24 22:12:03,117 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ec55624] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-24 22:12:03,719 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:188 - Multiple Config Server Urls found listed.
-2020-03-24 22:12:03,722 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9762
-2020-03-24 22:12:04,898 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:230 - Connect Timeout Exception on Url - http://127.0.0.1:9762. Will be trying the next url if available
-2020-03-24 22:12:04,898 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9760
-2020-03-24 22:12:05,236 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=gateway, profiles=[native], label=null, version=null, state=null
-2020-03-24 22:12:05,237 [main] INFO  [o.s.c.b.c.PropertySourceBootstrapConfiguration] PropertySourceBootstrapConfiguration.java:101 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='classpath:/native-config/gateway-native.yml'}, MapPropertySource {name='classpath:/native-config/application-native.yml'}]}
-2020-03-24 22:12:05,247 [main] INFO  [com.zhupeng.minor.gateway.GatewayApplication] SpringApplication.java:652 - The following profiles are active: native
-2020-03-24 22:12:06,976 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:131 - Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
-2020-03-24 22:12:07,575 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-03-24 22:12:07,580 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-03-24 22:12:07,626 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:182 - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
-2020-03-24 22:12:07,675 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:131 - Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
-2020-03-24 22:12:07,712 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:131 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-03-24 22:12:08,269 [main] INFO  [o.springframework.cloud.context.scope.GenericScope] GenericScope.java:295 - BeanFactory id=8c44baf0-2663-3f35-b8b1-3b554e396d90
-2020-03-24 22:12:08,282 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:193 - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
-2020-03-24 22:12:08,293 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:280 - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
-2020-03-24 22:12:08,305 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:431 - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
-2020-03-24 22:12:09,152 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-24 22:12:09,214 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$5d9d0e56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-24 22:12:09,244 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration$$EnhancerBySpringCGLIB$$392f1976] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-24 22:12:09,263 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$$EnhancerBySpringCGLIB$$7216c243] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-24 22:12:09,277 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-24 22:12:09,341 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ec55624] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-24 22:12:09,885 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
-2020-03-24 22:12:09,886 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-03-24 22:12:09,895 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
-2020-03-24 22:12:09,896 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-03-24 22:12:12,821 [main] INFO  [com.netflix.config.util.ConfigurationUtils] ConfigurationUtils.java:183 - Loaded properties file file:/D:/workspace/zhupeng/GIT/credit/common/common-core/target/classes/hystrix-plugins.properties
-2020-03-24 22:12:13,553 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [After]
-2020-03-24 22:12:13,554 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Before]
-2020-03-24 22:12:13,554 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Between]
-2020-03-24 22:12:13,555 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Cookie]
-2020-03-24 22:12:13,556 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Header]
-2020-03-24 22:12:13,556 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Host]
-2020-03-24 22:12:13,557 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Method]
-2020-03-24 22:12:13,557 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Path]
-2020-03-24 22:12:13,558 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Query]
-2020-03-24 22:12:13,558 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
-2020-03-24 22:12:13,558 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [RemoteAddr]
-2020-03-24 22:12:13,559 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Weight]
-2020-03-24 22:12:13,559 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2020-03-24 22:12:14,773 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskScheduler'
-2020-03-24 22:12:15,054 [main] INFO  [o.s.b.actuate.endpoint.web.EndpointLinksResolver] EndpointLinksResolver.java:58 - Exposing 25 endpoint(s) beneath base path '/actuator'
-2020-03-24 22:12:16,960 [main] INFO  [o.s.c.stream.messaging.DirectWithAttributesChannel] AbstractSubscribableChannel.java:64 - Channel 'gateway-1.springCloudBusInput' has 1 subscriber(s).
-2020-03-24 22:12:17,225 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:767 - Registering MessageChannel errorChannel
-2020-03-24 22:12:17,381 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:767 - Registering MessageChannel springCloudBusInput
-2020-03-24 22:12:17,465 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:767 - Registering MessageChannel springCloudBusOutput
-2020-03-24 22:12:17,478 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:767 - Registering MessageChannel nullChannel
-2020-03-24 22:12:17,514 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:785 - Registering MessageHandler errorLogger
-2020-03-24 22:12:17,553 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:785 - Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@a20898c
-2020-03-24 22:12:17,725 [main] INFO  [o.s.integration.endpoint.EventDrivenConsumer] EventDrivenConsumer.java:107 - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-03-24 22:12:17,726 [main] INFO  [o.s.integration.channel.PublishSubscribeChannel] AbstractSubscribableChannel.java:64 - Channel 'gateway-1.errorChannel' has 1 subscriber(s).
-2020-03-24 22:12:17,726 [main] INFO  [o.s.integration.endpoint.EventDrivenConsumer] AbstractEndpoint.java:159 - started _org.springframework.integration.errorLogger
-2020-03-24 22:12:17,974 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:188 - Multiple Config Server Urls found listed.
-2020-03-24 22:12:17,975 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9762
-2020-03-24 22:12:18,993 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:230 - Connect Timeout Exception on Url - http://127.0.0.1:9762. Will be trying the next url if available
-2020-03-24 22:12:18,994 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9760
-2020-03-24 22:12:19,597 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=gateway, profiles=[native], label=null, version=null, state=null
-2020-03-24 22:12:19,597 [main] INFO  [o.s.c.b.c.PropertySourceBootstrapConfiguration] PropertySourceBootstrapConfiguration.java:101 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='classpath:/native-config/gateway-native.yml'}, MapPropertySource {name='classpath:/native-config/application-native.yml'}]}
-2020-03-24 22:12:19,969 [main] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-24 22:12:20,037 [main] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:517 - Created new connection: rabbitConnectionFactory#35af1558:0/SimpleConnection@670aac24 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 51721]
-2020-03-24 22:12:20,110 [main] INFO  [o.s.c.stream.messaging.DirectWithAttributesChannel] AbstractSubscribableChannel.java:64 - Channel 'gateway-1.springCloudBusOutput' has 1 subscriber(s).
-2020-03-24 22:12:20,138 [main] INFO  [o.s.cloud.netflix.eureka.InstanceInfoFactory] InstanceInfoFactory.java:72 - Setting initial instance status as: STARTING
-2020-03-24 22:12:20,308 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:365 - Initializing Eureka in region us-east-1
-2020-03-24 22:12:20,775 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:70 - Using JSON encoding codec LegacyJacksonJson
-2020-03-24 22:12:20,776 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:71 - Using JSON decoding codec LegacyJacksonJson
-2020-03-24 22:12:21,351 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:80 - Using XML encoding codec XStreamXml
-2020-03-24 22:12:21,351 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:81 - Using XML decoding codec XStreamXml
-2020-03-24 22:12:21,817 [main] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 22:12:21,961 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:976 - Disable delta property : false
-2020-03-24 22:12:21,962 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:977 - Single vip registry refresh property : null
-2020-03-24 22:12:21,962 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:978 - Force full registry fetch : false
-2020-03-24 22:12:21,962 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:979 - Application is null : false
-2020-03-24 22:12:21,963 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:980 - Registered Applications size is zero : true
-2020-03-24 22:12:21,963 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:982 - Application version is -1: true
-2020-03-24 22:12:21,964 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1065 - Getting all instance registry info from the eureka server
-2020-03-24 22:12:22,411 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1074 - The response status is 200
-2020-03-24 22:12:22,416 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1288 - Starting heartbeat executor: renew interval is: 5
-2020-03-24 22:12:22,422 [main] INFO  [com.netflix.discovery.InstanceInfoReplicator] InstanceInfoReplicator.java:60 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-03-24 22:12:22,430 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:465 - Discovery Client initialized at timestamp 1585059142428 with initial instances count: 2
-2020-03-24 22:12:22,443 [main] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:41 - Registering application GATEWAY with eureka with status UP
-2020-03-24 22:12:22,444 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1323 - Saw local status change event StatusChangeEvent [timestamp=1585059142444, current=UP, previous=STARTING]
-2020-03-24 22:12:22,449 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:844 - DiscoveryClient_GATEWAY/SD-20181223DEXT:gateway:9767: registering service...
-2020-03-24 22:12:22,533 [main] INFO  [o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner] RabbitExchangeQueueProvisioner.java:168 - declaring queue for inbound: springCloudBus.anonymous.N_fUx41GRqCz4XaBEd1dhA, bound to: springCloudBus
-2020-03-24 22:12:22,578 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:767 - Registering MessageChannel springCloudBus.anonymous.N_fUx41GRqCz4XaBEd1dhA.errors
-2020-03-24 22:12:22,582 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:853 - DiscoveryClient_GATEWAY/SD-20181223DEXT:gateway:9767 - registration status: 204
-2020-03-24 22:12:22,809 [main] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'gateway-1.springCloudBus.anonymous.N_fUx41GRqCz4XaBEd1dhA.errors' has 1 subscriber(s).
-2020-03-24 22:12:22,810 [main] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'gateway-1.springCloudBus.anonymous.N_fUx41GRqCz4XaBEd1dhA.errors' has 2 subscriber(s).
-2020-03-24 22:12:22,857 [main] INFO  [o.s.i.amqp.inbound.AmqpInboundChannelAdapter] AbstractEndpoint.java:159 - started inbound.springCloudBus.anonymous.N_fUx41GRqCz4XaBEd1dhA
-2020-03-24 22:12:23,333 [main] INFO  [o.s.boot.web.embedded.netty.NettyWebServer] NettyWebServer.java:76 - Netty started on port(s): 9767
-2020-03-24 22:12:23,336 [main] INFO  [o.s.c.n.e.s.EurekaAutoServiceRegistration] EurekaAutoServiceRegistration.java:145 - Updating port to 9767
-2020-03-24 22:12:23,505 [main] INFO  [com.zhupeng.minor.gateway.GatewayApplication] StartupInfoLogger.java:59 - Started GatewayApplication in 23.732 seconds (JVM running for 26.125)
-2020-03-24 22:12:23,508 [main] INFO  [com.zhupeng.minor.gateway.GatewayApplication] GatewayApplication.java:16 - 网关服务启动完成！
-2020-03-24 22:12:23,926 [RMI TCP Connection(2)-192.168.43.47] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:188 - Multiple Config Server Urls found listed.
-2020-03-24 22:12:23,927 [RMI TCP Connection(2)-192.168.43.47] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9762
-2020-03-24 22:12:24,936 [RMI TCP Connection(2)-192.168.43.47] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:230 - Connect Timeout Exception on Url - http://127.0.0.1:9762. Will be trying the next url if available
-2020-03-24 22:12:24,937 [RMI TCP Connection(2)-192.168.43.47] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9760
-2020-03-24 22:12:25,187 [RMI TCP Connection(2)-192.168.43.47] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=gateway, profiles=[native], label=null, version=null, state=null
-2020-03-24 22:12:25,450 [parallel-1] INFO  [io.lettuce.core.EpollProvider] EpollProvider.java:68 - Starting without optional epoll library
-2020-03-24 22:12:25,454 [parallel-1] INFO  [io.lettuce.core.KqueueProvider] KqueueProvider.java:70 - Starting without optional kqueue library
-2020-03-24 22:16:45,178 [lettuce-nioEventLoop-4-1] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: pc-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2020-03-24 22:16:45,246 [lettuce-nioEventLoop-4-1] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:58 - Shutdown hook installed for: NFLoadBalancer-PingTimer-pc-user
-2020-03-24 22:16:45,248 [lettuce-nioEventLoop-4-1] INFO  [com.netflix.loadbalancer.BaseLoadBalancer] BaseLoadBalancer.java:197 - Client: pc-user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=pc-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
-2020-03-24 22:16:45,274 [lettuce-nioEventLoop-4-1] INFO  [c.n.loadbalancer.DynamicServerListLoadBalancer] DynamicServerListLoadBalancer.java:222 - Using serverListUpdater PollingServerListUpdater
-2020-03-24 22:16:45,323 [lettuce-nioEventLoop-4-1] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: pc-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2020-03-24 22:16:45,327 [lettuce-nioEventLoop-4-1] INFO  [c.n.loadbalancer.DynamicServerListLoadBalancer] DynamicServerListLoadBalancer.java:150 - DynamicServerListLoadBalancer for client pc-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=pc-user,current list of Servers=[192.168.43.47:9765],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
-},Server stats: [[Server:192.168.43.47:9765;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
-]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@6a32f82f
-2020-03-24 22:16:46,282 [PollingServerListUpdater-0] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: pc-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2020-03-24 22:17:21,974 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 22:17:38,803 [lettuce-nioEventLoop-4-1] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: mobile-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2020-03-24 22:17:38,807 [lettuce-nioEventLoop-4-1] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:58 - Shutdown hook installed for: NFLoadBalancer-PingTimer-mobile-user
-2020-03-24 22:17:38,808 [lettuce-nioEventLoop-4-1] INFO  [com.netflix.loadbalancer.BaseLoadBalancer] BaseLoadBalancer.java:197 - Client: mobile-user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=mobile-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
-2020-03-24 22:17:38,812 [lettuce-nioEventLoop-4-1] INFO  [c.n.loadbalancer.DynamicServerListLoadBalancer] DynamicServerListLoadBalancer.java:222 - Using serverListUpdater PollingServerListUpdater
-2020-03-24 22:17:38,814 [lettuce-nioEventLoop-4-1] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: mobile-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2020-03-24 22:17:38,816 [lettuce-nioEventLoop-4-1] INFO  [c.n.loadbalancer.DynamicServerListLoadBalancer] DynamicServerListLoadBalancer.java:150 - DynamicServerListLoadBalancer for client mobile-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=mobile-user,current list of Servers=[192.168.43.47:9763],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
-},Server stats: [[Server:192.168.43.47:9763;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
-]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@3bc17879
-2020-03-24 22:17:39,814 [PollingServerListUpdater-0] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: mobile-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2020-03-24 22:22:21,981 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 22:27:21,988 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 22:32:21,995 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 22:37:22,001 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 22:42:22,007 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 22:47:22,013 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 22:52:22,019 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 22:57:22,025 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 23:02:22,032 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 23:07:22,038 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 23:12:22,064 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 23:17:22,070 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 23:22:22,076 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 23:27:22,082 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 23:32:22,089 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-24 23:37:22,095 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-25 19:54:20,821 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c7fe4528] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-25 19:54:21,384 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:188 - Multiple Config Server Urls found listed.
-2020-03-25 19:54:21,385 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9762
-2020-03-25 19:54:22,546 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:230 - Connect Timeout Exception on Url - http://127.0.0.1:9762. Will be trying the next url if available
-2020-03-25 19:54:22,548 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9760
-2020-03-25 19:54:22,980 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=gateway, profiles=[native], label=null, version=null, state=null
-2020-03-25 19:54:22,980 [main] INFO  [o.s.c.b.c.PropertySourceBootstrapConfiguration] PropertySourceBootstrapConfiguration.java:101 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='classpath:/native-config/gateway-native.yml'}, MapPropertySource {name='classpath:/native-config/application-native.yml'}]}
-2020-03-25 19:54:22,991 [main] INFO  [com.zhupeng.minor.gateway.GatewayApplication] SpringApplication.java:652 - The following profiles are active: native
-2020-03-25 19:54:25,787 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:131 - Endpoint ID 'bus-env' contains invalid characters, please migrate to a valid format.
-2020-03-25 19:54:26,327 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-03-25 19:54:26,342 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-03-25 19:54:26,395 [main] INFO  [o.s.d.r.config.RepositoryConfigurationDelegate] RepositoryConfigurationDelegate.java:182 - Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
-2020-03-25 19:54:26,456 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:131 - Endpoint ID 'bus-refresh' contains invalid characters, please migrate to a valid format.
-2020-03-25 19:54:26,489 [main] WARN  [o.springframework.boot.actuate.endpoint.EndpointId] EndpointId.java:131 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-03-25 19:54:27,540 [main] INFO  [o.springframework.cloud.context.scope.GenericScope] GenericScope.java:295 - BeanFactory id=a4324235-4916-3f91-b586-592df20f8ca2
-2020-03-25 19:54:27,551 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:193 - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
-2020-03-25 19:54:27,563 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:280 - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
-2020-03-25 19:54:27,576 [main] INFO  [o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor] DefaultConfiguringBeanFactoryPostProcessor.java:431 - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
-2020-03-25 19:54:28,078 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-25 19:54:28,167 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$16d5fd5a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-25 19:54:28,212 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration$$EnhancerBySpringCGLIB$$f268087a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-25 19:54:28,235 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$$EnhancerBySpringCGLIB$$2b4fb147] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-25 19:54:28,301 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-25 19:54:28,375 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c7fe4528] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-25 19:54:28,905 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
-2020-03-25 19:54:28,906 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-03-25 19:54:28,914 [main] WARN  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:121 - No URLs will be polled as dynamic configuration sources.
-2020-03-25 19:54:28,915 [main] INFO  [com.netflix.config.sources.URLConfigurationSource] URLConfigurationSource.java:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-03-25 19:54:32,652 [main] INFO  [com.netflix.config.util.ConfigurationUtils] ConfigurationUtils.java:183 - Loaded properties file file:/D:/workspace/myfile/GIT/credit/common/common-core/target/classes/hystrix-plugins.properties
-2020-03-25 19:54:33,264 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [After]
-2020-03-25 19:54:33,264 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Before]
-2020-03-25 19:54:33,265 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Between]
-2020-03-25 19:54:33,266 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Cookie]
-2020-03-25 19:54:33,267 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Header]
-2020-03-25 19:54:33,267 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Host]
-2020-03-25 19:54:33,267 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Method]
-2020-03-25 19:54:33,268 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Path]
-2020-03-25 19:54:33,268 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Query]
-2020-03-25 19:54:33,268 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
-2020-03-25 19:54:33,268 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [RemoteAddr]
-2020-03-25 19:54:33,269 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [Weight]
-2020-03-25 19:54:33,269 [main] INFO  [o.s.c.gateway.route.RouteDefinitionRouteLocator] RouteDefinitionRouteLocator.java:120 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2020-03-25 19:54:34,503 [main] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:171 - Initializing ExecutorService 'taskScheduler'
-2020-03-25 19:54:34,784 [main] INFO  [o.s.b.actuate.endpoint.web.EndpointLinksResolver] EndpointLinksResolver.java:58 - Exposing 25 endpoint(s) beneath base path '/actuator'
-2020-03-25 19:54:36,905 [main] INFO  [o.s.c.stream.messaging.DirectWithAttributesChannel] AbstractSubscribableChannel.java:64 - Channel 'gateway-1.springCloudBusInput' has 1 subscriber(s).
-2020-03-25 19:54:37,162 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:767 - Registering MessageChannel springCloudBusOutput
-2020-03-25 19:54:37,253 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:767 - Registering MessageChannel springCloudBusInput
-2020-03-25 19:54:37,272 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:767 - Registering MessageChannel errorChannel
-2020-03-25 19:54:37,350 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:767 - Registering MessageChannel nullChannel
-2020-03-25 19:54:37,385 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:785 - Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@43a72f0f
-2020-03-25 19:54:37,484 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:785 - Registering MessageHandler errorLogger
-2020-03-25 19:54:37,536 [main] INFO  [o.s.integration.endpoint.EventDrivenConsumer] EventDrivenConsumer.java:107 - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-03-25 19:54:37,536 [main] INFO  [o.s.integration.channel.PublishSubscribeChannel] AbstractSubscribableChannel.java:64 - Channel 'gateway-1.errorChannel' has 1 subscriber(s).
-2020-03-25 19:54:37,536 [main] INFO  [o.s.integration.endpoint.EventDrivenConsumer] AbstractEndpoint.java:159 - started _org.springframework.integration.errorLogger
-2020-03-25 19:54:37,945 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:188 - Multiple Config Server Urls found listed.
-2020-03-25 19:54:37,946 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9762
-2020-03-25 19:54:38,969 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:230 - Connect Timeout Exception on Url - http://127.0.0.1:9762. Will be trying the next url if available
-2020-03-25 19:54:38,969 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9760
-2020-03-25 19:54:39,391 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=gateway, profiles=[native], label=null, version=null, state=null
-2020-03-25 19:54:39,391 [main] INFO  [o.s.c.b.c.PropertySourceBootstrapConfiguration] PropertySourceBootstrapConfiguration.java:101 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='classpath:/native-config/gateway-native.yml'}, MapPropertySource {name='classpath:/native-config/application-native.yml'}]}
-2020-03-25 19:54:39,904 [main] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:54:41,022 [main] INFO  [o.s.c.stream.messaging.DirectWithAttributesChannel] AbstractSubscribableChannel.java:64 - Channel 'gateway-1.springCloudBusOutput' has 1 subscriber(s).
-2020-03-25 19:54:41,046 [main] INFO  [o.s.cloud.netflix.eureka.InstanceInfoFactory] InstanceInfoFactory.java:72 - Setting initial instance status as: STARTING
-2020-03-25 19:54:41,121 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:365 - Initializing Eureka in region us-east-1
-2020-03-25 19:54:41,414 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:70 - Using JSON encoding codec LegacyJacksonJson
-2020-03-25 19:54:41,415 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:71 - Using JSON decoding codec LegacyJacksonJson
-2020-03-25 19:54:41,649 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:80 - Using XML encoding codec XStreamXml
-2020-03-25 19:54:41,649 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:81 - Using XML decoding codec XStreamXml
-2020-03-25 19:54:41,926 [main] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-25 19:54:42,128 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:976 - Disable delta property : false
-2020-03-25 19:54:42,128 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:977 - Single vip registry refresh property : null
-2020-03-25 19:54:42,128 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:978 - Force full registry fetch : false
-2020-03-25 19:54:42,129 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:979 - Application is null : false
-2020-03-25 19:54:42,131 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:980 - Registered Applications size is zero : true
-2020-03-25 19:54:42,131 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:982 - Application version is -1: true
-2020-03-25 19:54:42,131 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1065 - Getting all instance registry info from the eureka server
-2020-03-25 19:54:42,719 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1074 - The response status is 200
-2020-03-25 19:54:42,724 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1288 - Starting heartbeat executor: renew interval is: 5
-2020-03-25 19:54:42,729 [main] INFO  [com.netflix.discovery.InstanceInfoReplicator] InstanceInfoReplicator.java:60 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-03-25 19:54:42,735 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:465 - Discovery Client initialized at timestamp 1585137282734 with initial instances count: 2
-2020-03-25 19:54:42,741 [main] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:41 - Registering application GATEWAY with eureka with status UP
-2020-03-25 19:54:42,744 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1323 - Saw local status change event StatusChangeEvent [timestamp=1585137282744, current=UP, previous=STARTING]
-2020-03-25 19:54:42,800 [main] INFO  [o.s.c.s.b.r.p.RabbitExchangeQueueProvisioner] RabbitExchangeQueueProvisioner.java:168 - declaring queue for inbound: springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww, bound to: springCloudBus
-2020-03-25 19:54:42,801 [main] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:54:42,815 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:844 - DiscoveryClient_GATEWAY/AUTOBVT-SMVSLG2:gateway:9767: registering service...
-2020-03-25 19:54:42,874 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:853 - DiscoveryClient_GATEWAY/AUTOBVT-SMVSLG2:gateway:9767 - registration status: 204
-2020-03-25 19:54:43,801 [main] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:54:44,813 [main] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:54:45,855 [main] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:767 - Registering MessageChannel springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww.errors
-2020-03-25 19:54:46,005 [main] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'gateway-1.springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww.errors' has 1 subscriber(s).
-2020-03-25 19:54:46,007 [main] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'gateway-1.springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww.errors' has 2 subscriber(s).
-2020-03-25 19:54:46,024 [main] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:54:47,061 [main] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] AbstractMessageListenerContainer.java:1713 - Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:54:47,074 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-1] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:54:48,081 [main] INFO  [o.s.i.amqp.inbound.AmqpInboundChannelAdapter] AbstractEndpoint.java:159 - started inbound.springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww
-2020-03-25 19:54:48,953 [main] INFO  [o.s.boot.web.embedded.netty.NettyWebServer] NettyWebServer.java:76 - Netty started on port(s): 9767
-2020-03-25 19:54:48,957 [main] INFO  [o.s.c.n.e.s.EurekaAutoServiceRegistration] EurekaAutoServiceRegistration.java:145 - Updating port to 9767
-2020-03-25 19:54:49,232 [main] INFO  [com.zhupeng.minor.gateway.GatewayApplication] StartupInfoLogger.java:59 - Started GatewayApplication in 32.544 seconds (JVM running for 33.974)
-2020-03-25 19:54:49,267 [main] INFO  [com.zhupeng.minor.gateway.GatewayApplication] GatewayApplication.java:16 - 网关服务启动完成！
-2020-03-25 19:54:53,231 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-1] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:54:53,238 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-1] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@3fc92211: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:54:53,255 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-2] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:54:59,264 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-2] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:54:59,266 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-2] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@66a71668: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:54:59,269 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-3] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:55:05,430 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-3] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:55:05,431 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-3] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@279be0cb: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:55:05,435 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-4] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:55:11,641 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-4] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:55:11,642 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-4] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@7b8c7a8b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:55:11,670 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-5] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:55:17,785 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-5] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:55:17,786 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-5] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@49b89a4c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:55:17,847 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-6] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:55:24,481 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-6] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:55:24,482 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-6] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@314ff018: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:55:24,611 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-7] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:55:30,809 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-7] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:55:30,810 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-7] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@1b3f324e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:55:31,719 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-8] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:55:37,754 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-8] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:55:37,754 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-8] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@439c447f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:55:37,757 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-9] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:55:43,763 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-9] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:55:43,763 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-9] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@82f82cb: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:55:43,764 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-10] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:55:49,767 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-10] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:55:49,768 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-10] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@2a138ab6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:55:49,777 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-11] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:55:55,791 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-11] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:55:55,791 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-11] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@32db66f0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:55:55,792 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-12] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:56:02,111 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-12] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:56:02,111 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-12] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@47472f86: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:56:02,150 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-13] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:56:08,342 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-13] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:56:08,343 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-13] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@3088348b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:56:08,348 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-14] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:56:14,552 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-14] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:56:14,552 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-14] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@76b003a0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:56:14,858 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-15] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:56:21,459 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-15] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:56:21,459 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-15] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@298a0cb5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:56:21,885 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-16] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:56:28,166 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-16] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:56:28,166 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-16] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@7833e655: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:56:28,203 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-17] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:56:34,229 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-17] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:56:34,231 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-17] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@288603b3: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:56:34,232 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-18] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:56:40,336 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-18] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:56:40,339 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-18] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@7f4d2832: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:56:40,348 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-19] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:56:46,357 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-19] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:56:46,357 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-19] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@12bada93: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:56:46,358 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-20] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:56:52,373 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-20] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:56:52,374 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-20] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@2795a30b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:56:52,377 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-21] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:56:58,375 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-21] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:56:58,376 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-21] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@20b6fdf7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:56:58,379 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-22] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:57:04,383 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-22] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:57:04,384 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-22] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@5bcac200: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:57:04,385 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-23] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:57:10,388 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-23] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:57:10,389 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-23] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@ea743a9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:57:10,391 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-24] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:57:16,390 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-24] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:57:16,390 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-24] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@7f020874: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:57:16,391 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-25] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:57:22,393 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-25] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:57:22,393 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-25] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@38f71c3d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:57:22,394 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-26] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:57:28,418 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-26] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:57:28,420 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-26] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@1cf14cc1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:57:28,424 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-27] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:57:34,444 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-27] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:57:34,444 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-27] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@eede747: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:57:34,447 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-28] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:57:40,458 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-28] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:57:40,458 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-28] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@1c705c37: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:57:40,459 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-29] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:57:46,464 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-29] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:57:46,464 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-29] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@6b778e1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:57:46,467 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-30] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:57:52,469 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-30] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:57:52,470 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-30] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@7453af28: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:57:52,472 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-31] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:57:58,488 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-31] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:57:58,489 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-31] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@42694b9e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:57:58,491 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-32] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:58:04,505 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-32] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:58:04,506 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-32] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@11bdd565: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:58:04,509 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-33] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:58:10,524 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-33] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:58:10,524 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-33] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@1a6739b3: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:58:10,525 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-34] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:58:16,637 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-34] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:58:16,638 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-34] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@6a767bce: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:58:16,643 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-35] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:58:22,666 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-35] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:58:22,669 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-35] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@5140939a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:58:22,673 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-36] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:58:28,677 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-36] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:58:28,677 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-36] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@1353a90d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:58:28,679 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-37] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:58:34,681 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-37] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:58:34,682 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-37] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@338cdeb1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:58:34,685 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-38] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:58:40,704 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-38] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:58:40,704 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-38] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@48a093f1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:58:40,705 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-39] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:58:46,719 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-39] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:58:46,720 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-39] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@3260b683: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:58:46,722 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-40] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:58:52,786 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-40] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:58:52,786 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-40] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@457efd97: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:58:52,787 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-41] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:58:58,961 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-41] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:58:58,962 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-41] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@26719f4a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:58:58,965 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-42] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:59:04,970 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-42] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:59:04,971 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-42] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@721bae90: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:59:04,973 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-43] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:59:11,002 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-43] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:59:11,003 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-43] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@20be3c56: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:59:11,010 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-44] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:59:17,068 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-44] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:59:17,068 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-44] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@fa73afc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:59:17,069 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-45] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:59:23,177 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-45] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:59:23,177 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-45] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@13cf5c28: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:59:23,179 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-46] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:59:29,357 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-46] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:59:29,357 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-46] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@65f22855: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:59:29,378 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-47] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:59:35,524 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-47] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:59:35,525 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-47] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@16672520: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:59:35,527 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-48] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:59:41,536 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-48] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:59:41,536 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-48] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@5a235436: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:59:41,537 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-49] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:59:42,136 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-25 19:59:47,633 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-49] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:59:47,634 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-49] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@49f7cf42: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:59:47,636 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-50] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 19:59:54,044 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-50] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 19:59:54,044 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-50] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@76470e4b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 19:59:54,113 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-51] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:00:00,223 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-51] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:00:00,223 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-51] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@775da7f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:00:00,241 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-52] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:00:06,412 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-52] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:00:06,412 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-52] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@102cea1a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:00:06,416 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-53] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:00:12,440 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-53] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:00:12,441 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-53] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@a1dba5d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:00:12,444 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-54] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:00:18,456 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-54] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:00:18,456 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-54] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@4da8da11: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:00:18,458 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-55] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:00:20,306 [reactor-http-nio-2] INFO  [io.lettuce.core.EpollProvider] EpollProvider.java:68 - Starting without optional epoll library
-2020-03-25 20:00:20,309 [reactor-http-nio-2] INFO  [io.lettuce.core.KqueueProvider] KqueueProvider.java:70 - Starting without optional kqueue library
-2020-03-25 20:00:24,455 [lettuce-nioEventLoop-4-1] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: mobile-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2020-03-25 20:00:24,490 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-55] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:00:24,490 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-55] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@2ce21409: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:00:24,493 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-56] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:00:24,623 [lettuce-nioEventLoop-4-1] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:58 - Shutdown hook installed for: NFLoadBalancer-PingTimer-mobile-user
-2020-03-25 20:00:24,623 [lettuce-nioEventLoop-4-1] INFO  [com.netflix.loadbalancer.BaseLoadBalancer] BaseLoadBalancer.java:197 - Client: mobile-user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=mobile-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
-2020-03-25 20:00:24,647 [lettuce-nioEventLoop-4-1] INFO  [c.n.loadbalancer.DynamicServerListLoadBalancer] DynamicServerListLoadBalancer.java:222 - Using serverListUpdater PollingServerListUpdater
-2020-03-25 20:00:24,703 [lettuce-nioEventLoop-4-1] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: mobile-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2020-03-25 20:00:24,706 [lettuce-nioEventLoop-4-1] INFO  [c.n.loadbalancer.DynamicServerListLoadBalancer] DynamicServerListLoadBalancer.java:150 - DynamicServerListLoadBalancer for client mobile-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=mobile-user,current list of Servers=[10.12.14.163:9763],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
-},Server stats: [[Server:10.12.14.163:9763;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
-]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@e5311c7
-2020-03-25 20:00:25,721 [PollingServerListUpdater-0] INFO  [com.netflix.config.ChainedDynamicProperty] ChainedDynamicProperty.java:115 - Flipping property: mobile-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2020-03-25 20:00:30,835 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-56] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:00:30,840 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-56] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@3fafc153: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:00:30,847 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-57] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:00:36,904 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-57] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:00:36,905 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-57] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@4ec6f4f1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:00:36,917 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-58] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:00:42,920 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-58] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:00:42,920 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-58] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@28e61419: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:00:42,921 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-59] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:00:48,921 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-59] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:00:48,923 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-59] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@107a4c13: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:00:48,926 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-60] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:00:54,929 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-60] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:00:54,929 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-60] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@6725d744: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:00:54,938 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-61] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:01:00,942 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-61] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:01:00,943 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-61] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@5cf15f7b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:01:00,964 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-62] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:01:06,974 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-62] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:01:06,974 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-62] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@43e2091c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:01:06,999 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-63] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:01:13,008 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-63] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:01:13,009 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-63] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@7a195e2c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:01:13,012 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-64] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:01:19,009 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-64] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:01:19,010 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-64] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@681b2580: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:01:19,014 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-65] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:01:25,016 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-65] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:01:25,016 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-65] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@15c1761: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:01:25,017 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-66] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:01:31,024 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-66] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:01:31,025 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-66] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@e7d58d7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:01:31,029 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-67] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:01:37,042 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-67] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:01:37,042 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-67] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@14a7e8a6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:01:37,044 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-68] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:01:43,051 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-68] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:01:43,051 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-68] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@498172d6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:01:43,064 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-69] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:01:49,080 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-69] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:01:49,080 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-69] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@47b4b2cd: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:01:49,081 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-70] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:01:55,084 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-70] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:01:55,085 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-70] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@1867a990: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:01:55,088 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-71] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:02:01,101 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-71] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:02:01,101 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-71] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@23ef43d6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:02:01,108 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-72] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:02:07,115 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-72] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:02:07,115 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-72] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@6869f906: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:02:07,117 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-73] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:02:13,118 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-73] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:02:13,118 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-73] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@3e61149b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:02:13,121 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-74] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:02:19,238 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-74] WARN  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1303 - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:02:19,239 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-74] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:1282 - Restarting Consumer@d5f9fff: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
-2020-03-25 20:02:19,242 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-75] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:482 - Attempting to connect to: [127.0.0.1:5672]
-2020-03-25 20:02:19,895 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-75] INFO  [o.s.a.rabbit.connection.CachingConnectionFactory] AbstractConnectionFactory.java:517 - Created new connection: rabbitConnectionFactory#7b1d2f65:79/SimpleConnection@491d833d [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62381]
-2020-03-25 20:02:19,917 [springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww-75] INFO  [org.springframework.amqp.rabbit.core.RabbitAdmin] RabbitAdmin.java:591 - Auto-declaring a non-durable, auto-delete, or exclusive Queue (springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
-2020-03-25 20:04:42,139 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-25 20:09:42,214 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-25 20:12:10,317 [elastic-7] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:188 - Multiple Config Server Urls found listed.
-2020-03-25 20:12:10,318 [elastic-7] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9762
-2020-03-25 20:12:12,042 [elastic-7] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:230 - Connect Timeout Exception on Url - http://127.0.0.1:9762. Will be trying the next url if available
-2020-03-25 20:12:12,043 [elastic-7] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9760
-2020-03-25 20:12:14,993 [elastic-7] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=gateway, profiles=[native], label=null, version=null, state=null
-2020-03-25 20:14:42,216 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-25 20:17:25,836 [elastic-7] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:188 - Multiple Config Server Urls found listed.
-2020-03-25 20:17:25,837 [elastic-7] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9762
-2020-03-25 20:17:26,931 [elastic-7] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:230 - Connect Timeout Exception on Url - http://127.0.0.1:9762. Will be trying the next url if available
-2020-03-25 20:17:26,931 [elastic-7] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9760
-2020-03-25 20:17:27,643 [elastic-7] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=gateway, profiles=[native], label=null, version=null, state=null
-2020-03-25 20:19:42,219 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-25 20:24:42,223 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
-2020-03-25 20:25:36,291 [Thread-17] INFO  [com.netflix.loadbalancer.PollingServerListUpdater] PollingServerListUpdater.java:53 - Shutting down the Executor Pool for PollingServerListUpdater
-2020-03-25 20:25:36,721 [Thread-7] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:65 - Unregistering application GATEWAY with eureka with status DOWN
-2020-03-25 20:25:36,722 [Thread-7] WARN  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1321 - Saw local status change event StatusChangeEvent [timestamp=1585139136722, current=DOWN, previous=UP]
-2020-03-25 20:25:36,723 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:844 - DiscoveryClient_GATEWAY/AUTOBVT-SMVSLG2:gateway:9767: registering service...
-2020-03-25 20:25:36,974 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:853 - DiscoveryClient_GATEWAY/AUTOBVT-SMVSLG2:gateway:9767 - registration status: 204
-2020-03-25 20:25:37,396 [Thread-7] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:591 - Waiting for workers to finish.
-2020-03-25 20:25:37,719 [Thread-7] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:594 - Successfully waited for workers to finish.
-2020-03-25 20:25:37,720 [Thread-7] INFO  [o.s.i.amqp.inbound.AmqpInboundChannelAdapter] AbstractEndpoint.java:176 - stopped inbound.springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww
-2020-03-25 20:25:37,859 [Thread-7] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'gateway-1.springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww.errors' has 1 subscriber(s).
-2020-03-25 20:25:37,889 [Thread-7] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'gateway-1.springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww.errors' has 0 subscriber(s).
-2020-03-25 20:25:38,163 [Thread-7] INFO  [o.s.integration.endpoint.EventDrivenConsumer] EventDrivenConsumer.java:107 - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2020-03-25 20:25:38,165 [Thread-7] INFO  [o.s.integration.channel.PublishSubscribeChannel] AbstractSubscribableChannel.java:64 - Channel 'gateway-1.errorChannel' has 0 subscriber(s).
-2020-03-25 20:25:38,165 [Thread-7] INFO  [o.s.integration.endpoint.EventDrivenConsumer] AbstractEndpoint.java:193 - stopped _org.springframework.integration.errorLogger
-2020-03-25 20:25:38,496 [Thread-7] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskScheduler'
-2020-03-25 20:25:41,486 [Thread-7] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:67 - Shutdown hook removed for: NFLoadBalancer-PingTimer-mobile-user
-2020-03-25 20:25:41,532 [Thread-7] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:72 - Exception caught (might be ok if at shutdown)
+2020-04-13 00:02:26,613 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
+2020-04-13 00:07:26,648 [AsyncResolver-bootstrap-executor-0] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
+2020-04-13 00:10:21,675 [Thread-77] INFO  [com.netflix.loadbalancer.PollingServerListUpdater] PollingServerListUpdater.java:53 - Shutting down the Executor Pool for PollingServerListUpdater
+2020-04-13 00:10:21,678 [Thread-61] INFO  [o.s.c.n.e.serviceregistry.EurekaServiceRegistry] EurekaServiceRegistry.java:65 - Unregistering application GATEWAY with eureka with status DOWN
+2020-04-13 00:10:21,679 [Thread-61] WARN  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1321 - Saw local status change event StatusChangeEvent [timestamp=1586707821679, current=DOWN, previous=UP]
+2020-04-13 00:10:21,680 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:844 - DiscoveryClient_GATEWAY/SD-20181223DEXT:gateway:9767: registering service...
+2020-04-13 00:10:21,686 [DiscoveryClient-InstanceInfoReplicator-0] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:853 - DiscoveryClient_GATEWAY/SD-20181223DEXT:gateway:9767 - registration status: 204
+2020-04-13 00:10:21,696 [Thread-61] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:591 - Waiting for workers to finish.
+2020-04-13 00:10:22,110 [Thread-61] INFO  [o.s.a.r.listener.SimpleMessageListenerContainer] SimpleMessageListenerContainer.java:594 - Successfully waited for workers to finish.
+2020-04-13 00:10:22,111 [Thread-61] INFO  [o.s.i.amqp.inbound.AmqpInboundChannelAdapter] AbstractEndpoint.java:176 - stopped inbound.springCloudBus.anonymous.L_K-SqBFS3e4BgOyRAgizA
+2020-04-13 00:10:22,114 [Thread-61] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'gateway-1.springCloudBus.anonymous.L_K-SqBFS3e4BgOyRAgizA.errors' has 1 subscriber(s).
+2020-04-13 00:10:22,114 [Thread-61] INFO  [o.s.cloud.stream.binder.BinderErrorChannel] AbstractSubscribableChannel.java:64 - Channel 'gateway-1.springCloudBus.anonymous.L_K-SqBFS3e4BgOyRAgizA.errors' has 0 subscriber(s).
+2020-04-13 00:10:22,118 [Thread-61] INFO  [o.s.integration.endpoint.EventDrivenConsumer] EventDrivenConsumer.java:107 - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-04-13 00:10:22,119 [Thread-61] INFO  [o.s.integration.channel.PublishSubscribeChannel] AbstractSubscribableChannel.java:64 - Channel 'gateway-1.errorChannel' has 0 subscriber(s).
+2020-04-13 00:10:22,119 [Thread-61] INFO  [o.s.integration.endpoint.EventDrivenConsumer] AbstractEndpoint.java:193 - stopped _org.springframework.integration.errorLogger
+2020-04-13 00:10:22,129 [Thread-61] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'taskScheduler'
+2020-04-13 00:10:23,283 [Thread-61] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:67 - Shutdown hook removed for: NFLoadBalancer-PingTimer-mobile-user
+2020-04-13 00:10:23,290 [Thread-61] INFO  [com.netflix.util.concurrent.ShutdownEnabledTimer] ShutdownEnabledTimer.java:72 - Exception caught (might be ok if at shutdown)
 java.lang.IllegalStateException: Shutdown in progress
 	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
 	at java.lang.Runtime.removeShutdownHook(Runtime.java:239)
@@ -531,92 +47,59 @@ java.lang.IllegalStateException: Shutdown in progress
 	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
 	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
-2020-03-25 20:25:44,215 [DiscoveryClient-HeartbeatExecutor-0] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:91 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
-com.sun.jersey.api.client.ClientHandlerException: org.apache.http.NoHttpResponseException: localhost:9761 failed to respond
+2020-04-13 00:10:25,660 [Thread-61] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: errorChannel
+2020-04-13 00:10:25,661 [Thread-61] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBus.anonymous.L_K-SqBFS3e4BgOyRAgizA.errors
+2020-04-13 00:10:25,661 [Thread-61] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBusInput
+2020-04-13 00:10:25,662 [Thread-61] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBusOutput
+2020-04-13 00:10:25,662 [Thread-61] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: nullChannel
+2020-04-13 00:10:25,662 [Thread-61] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:498 - Summary on shutdown: _org.springframework.integration.errorLogger.handler
+2020-04-13 00:10:25,662 [Thread-61] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:498 - Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@6fdb1a59
+2020-04-13 00:10:25,664 [Thread-61] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:906 - Shutting down DiscoveryClient ...
+2020-04-13 00:10:28,666 [Thread-61] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:940 - Unregistering ...
+2020-04-13 00:10:30,741 [Thread-61] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:91 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
 	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
 	at com.sun.jersey.api.client.Client.handle(Client.java:652)
 	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
 	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
 	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
 	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
 	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864)
-	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
-	at java.util.concurrent.FutureTask.run(FutureTask.java)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.apache.http.NoHttpResponseException: localhost:9761 failed to respond
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
-	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
-	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294)
-	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257)
-	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230)
-	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 27 common frames omitted
-2020-03-25 20:25:44,327 [DiscoveryClient-HeartbeatExecutor-0] WARN  [c.n.d.s.t.decorator.RetryableEurekaHttpClient] RetryableEurekaHttpClient.java:130 - Request execution failed with message: org.apache.http.NoHttpResponseException: localhost:9761 failed to respond
-2020-03-25 20:25:44,395 [Thread-7] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBus.anonymous.isIPsxIlQYqzDaiIUNkTww.errors
-2020-03-25 20:25:44,395 [Thread-7] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBusOutput
-2020-03-25 20:25:44,396 [Thread-7] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: springCloudBusInput
-2020-03-25 20:25:44,396 [Thread-7] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: errorChannel
-2020-03-25 20:25:44,396 [Thread-7] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:495 - Summary on shutdown: nullChannel
-2020-03-25 20:25:44,396 [Thread-7] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:498 - Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@43a72f0f
-2020-03-25 20:25:44,396 [Thread-7] INFO  [o.s.integration.monitor.IntegrationMBeanExporter] IntegrationMBeanExporter.java:498 - Summary on shutdown: _org.springframework.integration.errorLogger.handler
-2020-03-25 20:25:44,397 [Thread-7] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:906 - Shutting down DiscoveryClient ...
-2020-03-25 20:25:46,548 [DiscoveryClient-HeartbeatExecutor-0] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:83 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
-com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864)
-	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
-	at java.util.concurrent.FutureTask.run(FutureTask.java)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:941)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:919)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:156)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1040)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1033)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
 Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
@@ -636,134 +119,9 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 28 common frames omitted
-2020-03-25 20:25:46,550 [DiscoveryClient-HeartbeatExecutor-0] WARN  [c.n.d.s.t.decorator.RetryableEurekaHttpClient] RetryableEurekaHttpClient.java:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:25:46,576 [DiscoveryClient-HeartbeatExecutor-0] ERROR [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:878 - DiscoveryClient_GATEWAY/AUTOBVT-SMVSLG2:gateway:9767 - was unable to send heartbeat!
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
-	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:864)
-	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1423)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
-	at java.util.concurrent.FutureTask.run(FutureTask.java)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-2020-03-25 20:25:47,333 [DiscoveryClient-CacheRefreshExecutor-0] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:91 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
-com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1103)
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:985)
-	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1497)
-	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1464)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
-	at java.util.concurrent.FutureTask.run(FutureTask.java)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 30 common frames omitted
-2020-03-25 20:25:47,408 [Thread-7] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:940 - Unregistering ...
-2020-03-25 20:25:47,409 [DiscoveryClient-CacheRefreshExecutor-0] WARN  [c.n.d.s.t.decorator.RetryableEurekaHttpClient] RetryableEurekaHttpClient.java:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:25:47,433 [DiscoveryClient-0] WARN  [com.netflix.discovery.TimedSupervisorTask] TimedSupervisorTask.java:88 - task supervisor shutting down, can't accept the task
-2020-03-25 20:25:49,420 [DiscoveryClient-CacheRefreshExecutor-0] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:83 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
-com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
-	at com.sun.jersey.api.client.Client.handle(Client.java:652)
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
-	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1103)
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:985)
-	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1497)
-	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1464)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
-	at java.util.concurrent.FutureTask.run(FutureTask.java)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
-	... 31 common frames omitted
-2020-03-25 20:25:49,570 [Thread-7] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:83 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
+	... 41 common frames omitted
+2020-04-13 00:10:30,743 [Thread-61] WARN  [c.n.d.s.t.decorator.RetryableEurekaHttpClient] RetryableEurekaHttpClient.java:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-04-13 00:10:32,757 [Thread-61] ERROR [c.n.d.s.t.decorator.RedirectingEurekaHttpClient] RedirectingEurekaHttpClient.java:83 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:zhupeng@localhost:9761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
@@ -828,26 +186,8 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
 	... 42 common frames omitted
-2020-03-25 20:25:49,701 [DiscoveryClient-CacheRefreshExecutor-0] WARN  [c.n.d.s.t.decorator.RetryableEurekaHttpClient] RetryableEurekaHttpClient.java:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:25:49,702 [DiscoveryClient-CacheRefreshExecutor-0] ERROR [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:990 - DiscoveryClient_GATEWAY/AUTOBVT-SMVSLG2:gateway:9767 - was unable to refresh its cache! status = Cannot execute request on any known server
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
-	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1103)
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:985)
-	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1497)
-	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1464)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
-	at java.util.concurrent.FutureTask.run(FutureTask.java)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-2020-03-25 20:25:49,703 [Thread-7] WARN  [c.n.d.s.t.decorator.RetryableEurekaHttpClient] RetryableEurekaHttpClient.java:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
-2020-03-25 20:25:49,704 [Thread-7] ERROR [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:944 - DiscoveryClient_GATEWAY/AUTOBVT-SMVSLG2:gateway:9767 - de-registration failedCannot execute request on any known server
+2020-04-13 00:10:32,774 [Thread-61] WARN  [c.n.d.s.t.decorator.RetryableEurekaHttpClient] RetryableEurekaHttpClient.java:130 - Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-04-13 00:10:32,775 [Thread-61] ERROR [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:944 - DiscoveryClient_GATEWAY/SD-20181223DEXT:gateway:9767 - de-registration failedCannot execute request on any known server
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
@@ -876,30 +216,4 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
 	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
-2020-03-25 20:25:50,071 [Thread-7] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:929 - Completed shut down of DiscoveryClient
-2020-03-25 20:44:04,918 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$494ebb66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-03-25 20:44:05,530 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:188 - Multiple Config Server Urls found listed.
-2020-03-25 20:44:05,532 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9762
-2020-03-25 20:44:06,728 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:230 - Connect Timeout Exception on Url - http://127.0.0.1:9762. Will be trying the next url if available
-2020-03-25 20:44:06,729 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:207 - Fetching config from server at : http://127.0.0.1:9760
-2020-03-25 20:44:07,180 [main] INFO  [o.s.c.c.client.ConfigServicePropertySourceLocator] ConfigServicePropertySourceLocator.java:151 - Located environment: name=gateway, profiles=[native], label=null, version=null, state=null
-2020-03-25 20:44:07,181 [main] INFO  [o.s.c.b.c.PropertySourceBootstrapConfiguration] PropertySourceBootstrapConfiguration.java:101 - Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='classpath:/native-config/gateway-native.yml'}, MapPropertySource {name='classpath:/native-config/application-native.yml'}]}
-2020-03-25 20:44:07,192 [main] INFO  [com.zhupeng.minor.gateway.GatewayApplication] SpringApplication.java:652 - The following profiles are active: native
-2020-03-25 20:44:10,718 [main] WARN  [o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext] AbstractApplicationContext.java:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'redisTemplate' defined in class path resource [com/zhupeng/common/utils/redis/RedisConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.zhupeng.common.utils.redis.RedisConfig; factoryMethodName=redisTemplate; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/zhupeng/common/utils/redis/RedisConfig.class]] for bean 'redisTemplate': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration; factoryMethodName=redisTemplate; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]] bound.
-2020-03-25 20:44:10,751 [main] INFO  [o.s.b.a.l.ConditionEvaluationReportLoggingListener] ConditionEvaluationReportLoggingListener.java:136 - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-03-25 20:44:10,771 [main] ERROR [o.s.b.diagnostics.LoggingFailureAnalysisReporter] LoggingFailureAnalysisReporter.java:40 - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-The bean 'redisTemplate', defined in class path resource [com/zhupeng/common/utils/redis/RedisConfig.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class] and overriding is disabled.
-
-Action:
-
-Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
-
+2020-04-13 00:10:32,795 [Thread-61] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:929 - Completed shut down of DiscoveryClient

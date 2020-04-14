@@ -27,16 +27,10 @@
         </dependency>
 
         <!-- credit系统模块 -->
-        <dependency>
+        <!--<dependency>
             <groupId>com.zhupeng</groupId>
             <artifactId>common-core</artifactId>
-        </dependency>
-<!--Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'redisTemplate' defined in class path resource [com/zhupeng/common/utils/redis/RedisConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.zhupeng.common.utils.redis.RedisConfig; factoryMethodName=redisTemplate; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/zhupeng/common/utils/redis/RedisConfig.class]] for bean 'redisTemplate': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration; factoryMethodName=redisTemplate; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class]] bound.
-        <dependency>
-            <groupId>com.zhupeng</groupId>
-            <artifactId>utils</artifactId>
-        </dependency>
--->
+        </dependency>-->
     </dependencies>
 
 </project>

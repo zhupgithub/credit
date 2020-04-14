@@ -3,4 +3,5 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.zhupeng.common.sys.chain.aop.LogChainOnProviderAop,\
   com.zhupeng.common.sys.feign.FeignConfig,\
   com.zhupeng.common.sys.feign.FeignRequestHeaderInterceptor,\
-  com.zhupeng.common.sys.exception.DefualtExceptionHandler
+  com.zhupeng.common.sys.exception.DefualtExceptionHandler,\
+  com.zhupeng.common.sys.http.WebMvcConfig
